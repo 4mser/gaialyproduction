@@ -4155,7 +4155,7 @@ function encode(val) {
 /**
  * Build a URL by appending params to the end
  *
- * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {string} url The base of the url (e.g., https://www.google.com)
  * @param {object} [params] The params to be appended
  * @returns {string} The formatted url
  */
@@ -4386,7 +4386,7 @@ module.exports = (
 
         urlParsingNode.setAttribute('href', href);
 
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+        // urlParsingNode provides the UrlUtils interface - https://url.spec.whatwg.org/#urlutils
         return {
           href: urlParsingNode.href,
           protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
@@ -5096,7 +5096,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * Lodash <https://lodash.com/>
  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
  * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Based on Underscore.js 1.8.3 <https://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 ;(function() {
@@ -5241,7 +5241,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
   /**
    * Used to match `RegExp`
-   * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+   * [syntax characters](https://ecma-international.org/ecma-262/7.0/#sec-patterns).
    */
   var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
       reHasRegExpChar = RegExp(reRegExpChar.source);
@@ -5277,7 +5277,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
   /**
    * Used to match
-   * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+   * [ES template delimiters](https://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
    */
   var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
 
@@ -5379,7 +5379,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     rsEmoji
   ].join('|'), 'g');
 
-  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
+  /** Used to detect strings with [zero-width joiners or code points from the astral planes](https://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
   var reHasUnicode = RegExp('[' + rsZWJ + rsAstralRange  + rsComboRange + rsVarRange + ']');
 
   /** Used to detect strings that need a more robust regexp to match words. */
@@ -6577,7 +6577,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Used to resolve the
-     * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+     * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
      * of values.
      */
     var nativeObjectToString = objectProto.toString;
@@ -7595,7 +7595,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Assigns `value` to `key` of `object` if the existing value is not equivalent
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @private
@@ -10137,7 +10137,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     function createCtor(Ctor) {
       return function() {
         // Use a `switch` statement to work with class constructors. See
-        // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+        // https://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
         // for more details.
         var args = arguments;
         switch (args.length) {
@@ -10874,7 +10874,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
         case regexpTag:
         case stringTag:
           // Coerce regexes to strings and treat strings, primitives and objects,
-          // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+          // as equal. See https://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
           // for more details.
           return object == (other + '');
 
@@ -11663,7 +11663,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * This function is like
-     * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [`Object.keys`](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * except that it includes inherited enumerable properties.
      *
      * @private
@@ -12082,7 +12082,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of `array` values not included in the other given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -12583,7 +12583,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Gets the index at which the first occurrence of `value` is found in `array`
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. If `fromIndex` is negative, it's used as the
      * offset from the end of `array`.
      *
@@ -12637,7 +12637,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of unique values that are included in all given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -12831,7 +12831,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Removes all given values from `array` using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.without`, this method mutates `array`. Use `_.remove`
@@ -13450,7 +13450,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of unique values, in order, from all given arrays using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @static
@@ -13528,7 +13528,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates a duplicate-free version of an array, using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons, in which only the first occurrence of each element
      * is kept. The order of result values is determined by the order they occur
      * in the array.
@@ -13671,7 +13671,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array excluding all given values using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.pull`, this method returns a new array.
@@ -14562,7 +14562,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     /**
      * Checks if `value` is in `collection`. If `collection` is a string, it's
      * checked for a substring of `value`, otherwise
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * is used for equality comparisons. If `fromIndex` is negative, it's used as
      * the offset from the end of `collection`.
      *
@@ -15267,7 +15267,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * This method differs from `_.bind` by allowing bound functions to reference
      * methods that may be redefined or don't yet exist. See
-     * [Peter Michaux's article](http://peter.michaux.ca/articles/lazy-function-definition-pattern)
+     * [Peter Michaux's article](https://peter.michaux.ca/articles/lazy-function-definition-pattern)
      * for more details.
      *
      * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
@@ -15664,7 +15664,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * **Note:** The cache is exposed as the `cache` property on the memoized
      * function. Its creation may be customized by replacing the `_.memoize.Cache`
      * constructor with one whose instances implement the
-     * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+     * [`Map`](https://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
      * method interface of `clear`, `delete`, `get`, `has`, and `set`.
      *
      * @static
@@ -15964,7 +15964,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     /**
      * Creates a function that invokes `func` with the `this` binding of the
      * create function and an array of arguments much like
-     * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
+     * [`Function#apply`](https://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
      *
      * **Note:** This method is based on the
      * [spread operator](https://mdn.io/spread_operator).
@@ -16312,7 +16312,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Performs a
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * comparison between two values to determine if they are equivalent.
      *
      * @static
@@ -16849,7 +16849,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is a valid array-like length.
      *
      * **Note:** This method is loosely based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -16878,7 +16878,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Checks if `value` is the
-     * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+     * [language type](https://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
      * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
      *
      * @static
@@ -17532,7 +17532,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Converts `value` to an integer.
      *
      * **Note:** This method is loosely based on
-     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+     * [`ToInteger`](https://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
      *
      * @static
      * @memberOf _
@@ -17566,7 +17566,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * array-like object.
      *
      * **Note:** This method is based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -18440,7 +18440,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Creates an array of the own enumerable property names of `object`.
      *
      * **Note:** Non-object values are coerced to objects. See the
-     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [ES spec](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * for more details.
      *
      * @static
@@ -19395,7 +19395,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * (under "semi-related fun fact") for more details.
      *
      * When working with HTML you should always
-     * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+     * [quote attribute values](https://wonko.com/post/html-escaping) to reduce
      * XSS vectors.
      *
      * @static
@@ -19832,7 +19832,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * object is given, it takes precedence over `_.templateSettings` values.
      *
      * **Note:** In the development build `_.template` utilizes
-     * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+     * [sourceURLs](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
      * for easier debugging.
      *
      * For more information on precompiling templates see
@@ -19930,7 +19930,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      */
     function template(string, options, guard) {
       // Based on John Resig's `tmpl` implementation
-      // (http://ejohn.org/blog/javascript-micro-templating/)
+      // (https://ejohn.org/blog/javascript-micro-templating/)
       // and Laura Doktorova's doT.js (https://github.com/olado/doT).
       var settings = lodash.templateSettings;
 
@@ -22278,7 +22278,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   if (true) {
     // Expose Lodash on the global object to prevent errors when Lodash is
     // loaded by a script tag in the presence of an AMD loader.
-    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+    // See https://requirejs.org/docs/errors.html#mismatch for more details.
     // Use `_.noConflict` to remove Lodash from the global object.
     root._ = _;
 
@@ -22908,7 +22908,7 @@ process.umask = function() { return 0; };
 
     // place cursor at end of text in text input
     if (input.type !== 'file') {
-      // http://stackoverflow.com/a/2345915
+      // https://stackoverflow.com/a/2345915
       const val = input.value;
       input.value = '';
       input.value = val;
@@ -24394,7 +24394,7 @@ process.umask = function() { return 0; };
 
   /* istanbul ignore file */
 
-  // Fix iOS scrolling http://stackoverflow.com/q/39626302
+  // Fix iOS scrolling https://stackoverflow.com/q/39626302
 
   const iOSfix = () => {
     const iOS =

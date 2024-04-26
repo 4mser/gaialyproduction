@@ -35,7 +35,7 @@ function addData(l, d) {
 }
 
 /**
- * Load a [GeoJSON](http://geojson.org/) document into a layer and return the layer.
+ * Load a [GeoJSON](https://geojson.org/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -310,7 +310,7 @@ function corslite(url, callback, cors) {
     }
 
     // Both `onreadystatechange` and `onload` can fire. `onreadystatechange`
-    // has [been supported for longer](http://stackoverflow.com/a/9181508/229001).
+    // has [been supported for longer](https://stackoverflow.com/a/9181508/229001).
     if ('onload' in x) {
         x.onload = loaded;
     } else {
@@ -781,8 +781,8 @@ module.exports = {
 /**
  * Based off of [the offical Google document](https://developers.google.com/maps/documentation/utilities/polylinealgorithm)
  *
- * Some parts from [this implementation](http://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/PolylineEncoder.js)
- * by [Mark McClure](http://facstaff.unca.edu/mcmcclur/)
+ * Some parts from [this implementation](https://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/PolylineEncoder.js)
+ * by [Mark McClure](https://facstaff.unca.edu/mcmcclur/)
  *
  * @module polyline
  */

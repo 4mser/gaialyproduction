@@ -66,8 +66,8 @@ var GeoRasterLayer = require("georaster-layer-for-leaflet");
 var map = L.map('map').setView([0, 0], 5);
 
 // add OpenStreetMap basemap
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 var url_to_geotiff_file = "example_4326.tif";
@@ -87,7 +87,7 @@ fetch(url_to_geotiff_file)
           Optionally set the pixelValuesToColorFn function option to customize
           how values for a pixel are translated to a color.
 
-          http://leafletjs.com/reference-1.2.0.html#gridlayer
+          https://leafletjs.com/reference-1.2.0.html#gridlayer
       */
       var layer = new GeoRasterLayer({
           georaster: georaster,

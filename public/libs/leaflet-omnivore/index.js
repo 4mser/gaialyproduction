@@ -34,7 +34,7 @@ function addData(l, d) {
 }
 
 /**
- * Load a [GeoJSON](http://geojson.org/) document into a layer and return the layer.
+ * Load a [GeoJSON](https://geojson.org/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options

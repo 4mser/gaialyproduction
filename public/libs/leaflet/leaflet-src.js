@@ -1,5 +1,5 @@
 /* @preserve
- * Leaflet 1.6.0+Detached: bd88f73e8ddb90eb945a28bc1de9eb07f7386118.bd88f73, a JS library for interactive maps. http://leafletjs.com
+ * Leaflet 1.6.0+Detached: bd88f73e8ddb90eb945a28bc1de9eb07f7386118.bd88f73, a JS library for interactive maps. https://leafletjs.com
  * (c) 2010-2019 Vladimir Agafonkin, (c) 2010-2011 CloudMade
  */
 
@@ -207,7 +207,7 @@
   // mobile devices (by setting image `src` to this string).
   var emptyImageUrl = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
-  // inspired by http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+  // inspired by https://paulirish.com/2011/requestanimationframe-for-smart-animating/
 
   function getPrefixed(name) {
   	return window['webkit' + name] || window['moz' + name] || window['ms' + name];
@@ -1475,7 +1475,7 @@
    * Object that defines coordinate reference systems for projecting
    * geographical points into pixel (screen) coordinates and back (and to
    * coordinates in other units for [WMS](https://en.wikipedia.org/wiki/Web_Map_Service) services). See
-   * [spatial reference system](http://en.wikipedia.org/wiki/Coordinate_reference_system).
+   * [spatial reference system](https://en.wikipedia.org/wiki/Coordinate_reference_system).
    *
    * Leaflet defines the most usual CRSs by default. If you want to use a
    * CRS not defined by default, take a look at the
@@ -1618,7 +1618,7 @@
 
   	// Mean Earth Radius, as recommended for use by
   	// the International Union of Geodesy and Geophysics,
-  	// see http://rosettacode.org/wiki/Haversine_formula
+  	// see https://rosettacode.org/wiki/Haversine_formula
   	R: 6371000,
 
   	// distance between two geographical points using spherical law of cosines approximation
@@ -1783,7 +1783,7 @@
   // corresponding to the class name passed. For example, using 'line' will return
   // an instance of [SVGLineElement](https://developer.mozilla.org/docs/Web/API/SVGLineElement).
   function svgCreate(name) {
-  	return document.createElementNS('http://www.w3.org/2000/svg', name);
+  	return document.createElementNS('https://www.w3.org/2000/svg', name);
   }
 
   // @function pointsToPath(rings: Point[], closed: Boolean): String
@@ -2020,7 +2020,7 @@
   var _pointerDocListener = false;
 
   // Provides a touch events wrapper for (ms)pointer events.
-  // ref http://www.w3.org/TR/pointerevents/ https://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
+  // ref https://www.w3.org/TR/pointerevents/ https://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
 
   function addPointerListener(obj, type, handler, id) {
   	if (type === 'touchstart') {
@@ -2899,7 +2899,7 @@
   	// @method run(el: HTMLElement, newPos: Point, duration?: Number, easeLinearity?: Number)
   	// Run an animation of a given element to a new position, optionally setting
   	// duration in seconds (`0.25` by default) and easing linearity factor (3rd
-  	// argument of the [cubic bezier curve](http://cubic-bezier.com/#0,0,.5,1),
+  	// argument of the [cubic bezier curve](https://cubic-bezier.com/#0,0,.5,1),
   	// `0.5` by default).
   	run: function (el, newPos, duration, easeLinearity) {
   		this.stop();
@@ -4314,7 +4314,7 @@
   		var pos = this._getMapPanePos();
   		if (Math.max(Math.abs(pos.x), Math.abs(pos.y)) >= this.options.transform3DLimit) {
   			// https://bugzilla.mozilla.org/show_bug.cgi?id=1203873 but Webkit also have
-  			// a pixel offset on very high values, see: http://jsfiddle.net/dg6r5hhb/
+  			// a pixel offset on very high values, see: https://jsfiddle.net/dg6r5hhb/
   			this._resetView(this.getCenter(), this.getZoom());
   		}
   	},
@@ -4865,7 +4865,7 @@
    * @aka L.Control.Layers
    * @inherits Control
    *
-   * The layers control gives users the ability to switch between different base layers and switch overlays on/off (check out the [detailed example](http://leafletjs.com/examples/layers-control/)). Extends `Control`.
+   * The layers control gives users the ability to switch between different base layers and switch overlays on/off (check out the [detailed example](https://leafletjs.com/examples/layers-control/)). Extends `Control`.
    *
    * @example
    *
@@ -5159,7 +5159,7 @@
   		}
   	},
 
-  	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+  	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see https://bit.ly/PqYLBe)
   	_createRadioElement: function (name, checked) {
 
   		var radioHtml = '<input type="radio" class="leaflet-control-layers-selector" name="' +
@@ -5984,11 +5984,11 @@
   // @function simplify(points: Point[], tolerance: Number): Point[]
   // Dramatically reduces the number of points in a polyline while retaining
   // its shape and returns a new array of simplified points, using the
-  // [Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm).
+  // [Douglas-Peucker algorithm](https://en.wikipedia.org/wiki/Douglas-Peucker_algorithm).
   // Used for a huge performance boost when processing/displaying Leaflet polylines for
   // each zoom level and also reducing visual noise. tolerance affects the amount of
   // simplification (lesser value means higher quality but slower and with more points).
-  // Also released as a separated micro-library [Simplify.js](http://mourner.github.com/simplify-js/).
+  // Also released as a separated micro-library [Simplify.js](https://mourner.github.com/simplify-js/).
   function simplify(points, tolerance) {
   	if (!tolerance || !points.length) {
   		return points.slice();
@@ -6017,7 +6017,7 @@
   	return _sqClosestPointOnSegment(p, p1, p2);
   }
 
-  // Douglas-Peucker simplification, see http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
+  // Douglas-Peucker simplification, see https://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
   function _simplifyDP(points, sqTolerance) {
 
   	var len = points.length,
@@ -6356,7 +6356,7 @@
    * @class Projection
 
    * An object with methods for projecting geographical coordinates of the world onto
-   * a flat surface (and back). See [Map projection](http://en.wikipedia.org/wiki/Map_projection).
+   * a flat surface (and back). See [Map projection](https://en.wikipedia.org/wiki/Map_projection).
 
    * @property bounds: Bounds
    * The bounds (specified in CRS units) where the projection is valid
@@ -8191,7 +8191,7 @@
   	},
 
   	// @method getCenter(): LatLng
-  	// Returns the center ([centroid](http://en.wikipedia.org/wiki/Centroid)) of the polyline.
+  	// Returns the center ([centroid](https://en.wikipedia.org/wiki/Centroid)) of the polyline.
   	getCenter: function () {
   		// throws error when not yet added to map as this center calculation requires projected coordinates
   		if (!this._map) {
@@ -8892,14 +8892,14 @@
   // @method toGeoJSON(precision?: Number): Object
   // `precision` is the number of decimal places for coordinates.
   // The default value is 6 places.
-  // Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the marker (as a GeoJSON `Point` Feature).
+  // Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the marker (as a GeoJSON `Point` Feature).
   Marker.include(PointToGeoJSON);
 
   // @namespace CircleMarker
   // @method toGeoJSON(precision?: Number): Object
   // `precision` is the number of decimal places for coordinates.
   // The default value is 6 places.
-  // Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the circle marker (as a GeoJSON `Point` Feature).
+  // Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the circle marker (as a GeoJSON `Point` Feature).
   Circle.include(PointToGeoJSON);
   CircleMarker.include(PointToGeoJSON);
 
@@ -8908,7 +8908,7 @@
   // @method toGeoJSON(precision?: Number): Object
   // `precision` is the number of decimal places for coordinates.
   // The default value is 6 places.
-  // Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the polyline (as a GeoJSON `LineString` or `MultiLineString` Feature).
+  // Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the polyline (as a GeoJSON `LineString` or `MultiLineString` Feature).
   Polyline.include({
   	toGeoJSON: function (precision) {
   		var multi = !isFlat(this._latlngs);
@@ -8926,7 +8926,7 @@
   // @method toGeoJSON(precision?: Number): Object
   // `precision` is the number of decimal places for coordinates.
   // The default value is 6 places.
-  // Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the polygon (as a GeoJSON `Polygon` or `MultiPolygon` Feature).
+  // Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the polygon (as a GeoJSON `Polygon` or `MultiPolygon` Feature).
   Polygon.include({
   	toGeoJSON: function (precision) {
   		var holes = !isFlat(this._latlngs),
@@ -8964,7 +8964,7 @@
   	// @method toGeoJSON(precision?: Number): Object
   	// `precision` is the number of decimal places for coordinates.
   	// The default value is 6 places.
-  	// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the layer group (as a GeoJSON `FeatureCollection`, `GeometryCollection`, or `MultiPoint`).
+  	// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the layer group (as a GeoJSON `FeatureCollection`, `GeometryCollection`, or `MultiPoint`).
   	toGeoJSON: function (precision) {
 
   		var type = this.feature && this.feature.geometry && this.feature.geometry.type;
@@ -9029,7 +9029,7 @@
    * @example
    *
    * ```js
-   * var imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+   * var imageUrl = 'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
    * 	imageBounds = [[40.712216, -74.22655], [40.773941, -74.12544]];
    * L.imageOverlay(imageUrl, imageBounds).addTo(map);
    * ```
@@ -9387,8 +9387,8 @@
    * @example
    *
    * ```js
-   * var svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-   * svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
+   * var svgElement = document.createElementNS("https://www.w3.org/2000/svg", "svg");
+   * svgElement.setAttribute('xmlns', "https://www.w3.org/2000/svg");
    * svgElement.setAttribute('viewBox', "0 0 200 200");
    * svgElement.innerHTML = '<rect width="200" height="200"/><rect x="75" y="23" width="50" height="50" style="fill:red"/><rect x="75" y="123" width="50" height="50" style="fill:#0013ff"/>';
    * var svgElementBounds = [ [ 32, -130 ], [ 13, -100 ] ];
@@ -11567,7 +11567,7 @@
    * A string of the following form:
    *
    * ```
-   * 'http://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
+   * 'https://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
    * ```
    *
    * `{s}` means one of the available subdomains (used sequentially to help with browser parallel requests per domain limitation; subdomain values are specified in options; `a`, `b` or `c` by default, can be omitted), `{z}` — zoom level, `{x}` and `{y}` — tile coordinates. `{r}` can be used to add "&commat;2x" to the URL to load retina tiles.
@@ -11575,7 +11575,7 @@
    * You can use custom keys in the template, which will be [evaluated](#util-template) from TileLayer options, like this:
    *
    * ```
-   * L.tileLayer('http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
+   * L.tileLayer('https://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
    * ```
    */
 
@@ -11689,7 +11689,7 @@
 
   		/*
   		 Alt tag is set to empty string to keep screen readers from reading URL and for compliance reasons
-  		 http://www.w3.org/TR/WCAG20-TECHS/H67
+  		 https://www.w3.org/TR/WCAG20-TECHS/H67
   		*/
   		tile.alt = '';
 
@@ -11827,7 +11827,7 @@
    * @example
    *
    * ```js
-   * var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+   * var nexrad = L.tileLayer.wms("https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
    * 	layers: 'nexrad-n0r-900913',
    * 	format: 'image/png',
    * 	transparent: true,
@@ -11842,7 +11842,7 @@
   	// @aka TileLayer.WMS options
   	// If any custom options not documented here are used, they will be sent to the
   	// WMS server as extra parameters in each request URL. This can be useful for
-  	// [non-standard vendor WMS parameters](http://docs.geoserver.org/stable/en/user/services/wms/vendor.html).
+  	// [non-standard vendor WMS parameters](https://docs.geoserver.org/stable/en/user/services/wms/vendor.html).
   	defaultWmsParams: {
   		service: 'WMS',
   		request: 'GetMap',
@@ -12094,7 +12094,7 @@
    * Allows vector layers to be displayed with [`<canvas>`](https://developer.mozilla.org/docs/Web/API/Canvas_API).
    * Inherits `Renderer`.
    *
-   * Due to [technical limitations](http://caniuse.com/#search=canvas), Canvas is not
+   * Due to [technical limitations](https://caniuse.com/#search=canvas), Canvas is not
    * available in all web browsers, notably IE8, and overlapping geometries might
    * not display properly in some edge cases.
    *
@@ -12716,7 +12716,7 @@
    * Allows vector layers to be displayed with [SVG](https://developer.mozilla.org/docs/Web/SVG).
    * Inherits `Renderer`.
    *
-   * Due to [technical limitations](http://caniuse.com/#search=svg), SVG is not
+   * Due to [technical limitations](https://caniuse.com/#search=svg), SVG is not
    * available in all web browsers, notably Android 2.x and 3.x.
    *
    * Although SVG is not available on IE7 and IE8, these browsers support

@@ -2,15 +2,15 @@
 
 ![](https://farm8.staticflickr.com/7373/12376158164_e335b4e61d_b.jpg)
 
-[Leaflet](http://leafletjs.com/) supports the [GeoJSON](http://geojson.org/) format
+[Leaflet](https://leafletjs.com/) supports the [GeoJSON](https://geojson.org/) format
 by default. What if you have something else? That's where omnivore comes in.
 
 It currently supports:
 
-* [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) (via [csv2geojson](https://github.com/mapbox/csv2geojson))
+* [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) (via [csv2geojson](https://github.com/mapbox/csv2geojson))
 * GPX (via [toGeoJSON](https://github.com/mapbox/togeojson))
-* [KML](http://developers.google.com/kml/documentation/) (via [toGeoJSON](https://github.com/mapbox/togeojson))
-* [WKT](http://en.wikipedia.org/wiki/Well-known_text) (via [wellknown](https://github.com/mapbox/wellknown))
+* [KML](https://developers.google.com/kml/documentation/) (via [toGeoJSON](https://github.com/mapbox/togeojson))
+* [WKT](https://en.wikipedia.org/wiki/Well-known_text) (via [wellknown](https://github.com/mapbox/wellknown))
 * [TopoJSON](https://github.com/mbostock/topojson)
 * [Encoded Polylines](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) via [polyline](https://github.com/mapbox/polyline)
 
@@ -19,7 +19,7 @@ so you can specify what you want to add to the map with just a URL.
 
 ## Installation
 
-use it easily with the [Mapbox Plugins CDN](http://mapbox.com/mapbox.js/plugins/#leaflet-omnivore):
+use it easily with the [Mapbox Plugins CDN](https://mapbox.com/mapbox.js/plugins/#leaflet-omnivore):
 
 ```html
 <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
@@ -107,7 +107,7 @@ Adding custom styles to a GeoJSON layer:
 
 ```js
 var customLayer = L.geoJson(null, {
-    // http://leafletjs.com/reference.html#geojson-style
+    // https://leafletjs.com/reference.html#geojson-style
     style: function(feature) {
         return { color: '#f00' };
     }
@@ -151,7 +151,7 @@ after the call.
 
 ## Development
 
-This is a [browserify](http://browserify.org/) project:
+This is a [browserify](https://browserify.org/) project:
 
 ```sh
 git clone git@github.com:mapbox/leaflet-omnivore.git
@@ -177,8 +177,8 @@ to parse formats.
   [csv2geojson](https://github.com/mapbox/csv2geojson), [wellknown](https://github.com/mapbox/wellknown), or
   [toGeoJSON](https://github.com/mapbox/togeojson)
   individually.
-* **My AJAX request is failing for a cross-domain request**. Read up on the [Same Origin Restriction](http://en.wikipedia.org/wiki/Same-origin_policy).
-  By default, we use corslite, so cross-domain requests will try to use [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+* **My AJAX request is failing for a cross-domain request**. Read up on the [Same Origin Restriction](https://en.wikipedia.org/wiki/Same-origin_policy).
+  By default, we use corslite, so cross-domain requests will try to use [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
   if your server and browser supports it, but if one of them doesn't, there's no
   way on the internet to support your request.
 * **Why isn't JSONP supported?** [Here's why](https://gist.github.com/tmcw/6244497).

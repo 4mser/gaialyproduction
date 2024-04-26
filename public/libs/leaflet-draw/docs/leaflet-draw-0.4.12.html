@@ -113,15 +113,15 @@
 
 
 <pre><code class="lang-js">     var map = L.map(&#39;map&#39;, {drawControl: true}).setView([51.505, -0.09], 13);
-     L.tileLayer(&#39;http://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
-         attribution: &#39;&amp;copy; &lt;a href=&quot;http://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
+     L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+         attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
      }).addTo(map);
 </code></pre>
 <h3 id="adding-the-edit-toolbar">Adding the edit toolbar</h3>
 <p>To use the edit toolbar you must initialise the Leaflet.draw control and manually add it to the map.</p>
 <pre><code class="lang-js">     var map = L.map(&#39;map&#39;).setView([51.505, -0.09], 13);
-     L.tileLayer(&#39;http://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
-         attribution: &#39;&amp;copy; &lt;a href=&quot;http://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
+     L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+         attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
      }).addTo(map);
      // FeatureGroup is to store editable layers
      var drawnItems = new L.FeatureGroup();
@@ -1639,7 +1639,7 @@ The value will be rounded as defined by the precision option object.</p>
 		<td><code><b>segmentsIntersect</b>()</nobr></code></td>
 		<td><code>boolean</code></td>
 		<td><p>Checks to see if two line segments intersect. Does not handle degenerate cases.
-<a href="http://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf">http://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf</a></p>
+<a href="https://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf">https://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf</a></p>
 </td>
 	</tr>
 </tbody></table>
@@ -2056,7 +2056,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <td>position</td>
 <td>String</td>
 <td><code>&#39;topleft&#39;</code></td>
-<td>The initial position of the control (one of the map corners). See <a href="http://leafletjs.com/reference.html#control-positions">control positions</a>.</td>
+<td>The initial position of the control (one of the map corners). See <a href="https://leafletjs.com/reference.html#control-positions">control positions</a>.</td>
 </tr>
 <tr>
 <td>draw</td>
@@ -2152,7 +2152,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 </tr>
 <tr>
 <td>shapeOptions</td>
-<td><a href="http://leafletjs.com/reference.html#polyline-options">Leaflet Polyline options</a></td>
+<td><a href="https://leafletjs.com/reference.html#polyline-options">Leaflet Polyline options</a></td>
 <td><a href="https://github.com/Leaflet/Leaflet.draw/blob/master/src/draw/handler/Draw.Polyline.js#L20">See code</a></td>
 <td>The options used when drawing the polyline/polygon on the map.</td>
 </tr>
@@ -2256,7 +2256,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <tbody>
 <tr>
 <td>shapeOptions</td>
-<td><a href="http://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
+<td><a href="https://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
 <td><a href="https://github.com/Leaflet/Leaflet.draw/blob/master/src/draw/handler/Draw.Rectangle.js#L7">See code</a></td>
 <td>The options used when drawing the rectangle on the map.</td>
 </tr>
@@ -2287,7 +2287,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <tbody>
 <tr>
 <td>shapeOptions</td>
-<td><a href="http://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
+<td><a href="https://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
 <td><a href="https://github.com/Leaflet/Leaflet.draw/blob/master/src/draw/handler/Draw.Circle.js#L7">See code</a></td>
 <td>The options used when drawing the circle on the map.</td>
 </tr>
@@ -2312,7 +2312,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <tbody>
 <tr>
 <td>icon</td>
-<td><a href="http://leafletjs.com/reference.html#icon">Leaflet Icon</a></td>
+<td><a href="https://leafletjs.com/reference.html#icon">Leaflet Icon</a></td>
 <td><code>L.Icon.Default()</code></td>
 <td>The icon displayed when drawing a marker.</td>
 </tr>
@@ -2343,7 +2343,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <tbody>
 <tr>
 <td>featureGroup</td>
-<td><a href="http://leafletjs.com/reference.html#featuregroup">Leaflet FeatureGroup</a></td>
+<td><a href="https://leafletjs.com/reference.html#featuregroup">Leaflet FeatureGroup</a></td>
 <td><code>null</code></td>
 <td>This is the FeatureGroup that stores all editable shapes. <strong>THIS IS REQUIRED FOR THE EDIT TOOLBAR TO WORK</strong></td>
 </tr>
@@ -2386,7 +2386,7 @@ for this section of the documentation, please edit docs-misc.leafdoc in the buil
 <tbody>
 <tr>
 <td>selectedPathOptions</td>
-<td><a href="http://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
+<td><a href="https://leafletjs.com/reference.html#path-options">Leaflet Path options</a></td>
 <td><a href="https://github.com/Leaflet/Leaflet.draw/blob/master/src/edit/handler/EditToolbar.Edit.js#L9">See code</a></td>
 <td>The path options for how the layers will look while in edit mode. If this is set to null the editable path options will not be set.</td>
 </tr>
@@ -2409,7 +2409,7 @@ E.g. The edit options below will maintain the layer color and set the edit opaci
 
 
     <div class="footer">
-        <p>© 2012 - 2017 <a href="http://leafletjs.com/">Leaflet</a> and <a href="https://github.com/Leaflet">Leaflet
+        <p>© 2012 - 2017 <a href="https://leafletjs.com/">Leaflet</a> and <a href="https://github.com/Leaflet">Leaflet
             Organization</a></br>
             Thanks to all our <a
                     href="https://github.com/Leaflet/Leaflet.draw/graphs/contributors">Contributors</a></br>

@@ -619,7 +619,7 @@ class Thermal:
         """
         Parser infrared camera data as `NumPy` data`.
 
-        Equations to convert to temperature see http://130.15.24.88/exiftool/forum/index.php/topic,4898.60.html or https://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
+        Equations to convert to temperature see https://130.15.24.88/exiftool/forum/index.php/topic,4898.60.html or https://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
 
         Args:
             image_filename: str, relative path of R-JPEG image

@@ -9,7 +9,7 @@
         {{-- <form class="text-xs" wire:submit.prevent="save">
             <div class="flex flex-col items-center mb-2">
                 <div class="flex flex-nowrap items-center mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    <svg xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
@@ -31,7 +31,7 @@
                                     <tr>
                                         <th scope="col" class="flex flex-col text-sm font-medium text-gray-900 py-2">
                                             <div class="flex flex-nowrap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="w-5 h-5">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -65,13 +65,13 @@
                                         <td
                                             class="flex flex-col text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
                                             <div class="flex flex-nowrap ml-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
                                                 </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="ml-2 w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -92,13 +92,13 @@
                                         <td
                                             class="flex flex-col text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
                                             <div class="flex flex-nowrap ml-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
                                                 </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="ml-2 w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -119,13 +119,13 @@
                                         <td
                                             class="flex flex-col text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
                                             <div class="flex flex-nowrap ml-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
                                                 </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                <svg xmlns="https://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     class="ml-2 w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -145,7 +145,7 @@
                             {{ __('Details') }}
                         </div>
                         <div class="flex justify-end mt-2 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-5 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="flex flex-row items-center mt-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
                         <path fill-rule="evenodd"
                             d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
                             clip-rule="evenodd" />
@@ -175,7 +175,7 @@
             </div>
             <div class="flex flex-col mt-6">
                 <div class="flex flex-nowrap">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
                         <path fill-rule="evenodd"
                             d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                             clip-rule="evenodd" />
@@ -192,7 +192,7 @@
             </div>
             <div class="flex flex-col mt-6">
                 <div class="flex flex-nowrap items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-5">
                         <path fill-rule="evenodd"
                             d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
                             clip-rule="evenodd" />
@@ -219,7 +219,7 @@
                     </input>
                 </div>
                 <div class="flex flex-nowrap items-center mt-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    <svg xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />

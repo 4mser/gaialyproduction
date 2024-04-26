@@ -57,7 +57,7 @@ The following example will show you how to:
 4. Disable the delete functionality.
 
 ```js
-    var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png',
+    var cloudmadeUrl = 'https://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png',
         cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18}),
         map = new L.Map('map', {layers: [cloudmade], center: new L.LatLng(-37.7772, 175.2756), zoom: 15 });
     
@@ -163,12 +163,12 @@ and the generated html documentation is saved to `./docs/leaflet-draw-latest.htm
 
 Touch friendly version of Leaflet.draw was created by Michael Guild (https://github.com/michaelguild13).
 
-The touch support was initiated due to a demand for it at National Geographic for their Map Maker Projected (http://mapmaker.education.nationalgeographic.com/) that was created by Michael Guild and Daniel Schep (https://github.com/dschep)
+The touch support was initiated due to a demand for it at National Geographic for their Map Maker Projected (https://mapmaker.education.nationalgeographic.com/) that was created by Michael Guild and Daniel Schep (https://github.com/dschep)
 
 Thanks so much to [@brunob](https://github.com/brunob), [@tnightingale](https://github.com/tnightingale), and [@shramov](https://github.com/shramov). I got a lot of ideas from their Leaflet plugins.
 
 All the [contributors](https://github.com/Leaflet/Leaflet.draw/graphs/contributors) and issue reporters of this plugin rock. Thanks for tidying up my mess and keeping the plugin on track.
 
-The icons used for some of the toolbar buttons are either from http://glyphicons.com/ or inspired by them. <3 Glyphicons!
+The icons used for some of the toolbar buttons are either from https://glyphicons.com/ or inspired by them. <3 Glyphicons!
 
 Finally, [@mourner](https://github.com/mourner) is the man! Thanks for dedicating so much of your time to create the gosh darn best JavaScript mapping library around.

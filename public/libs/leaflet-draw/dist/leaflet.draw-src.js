@@ -3,7 +3,7 @@
  (c) 2012-2017, Jacob Toye, Jon West, Smartrak, Leaflet
 
  https://github.com/Leaflet/Leaflet.draw
- http://leafletjs.com
+ https://leafletjs.com
  */
 (function (window, document, undefined) {/**
  * Leaflet.draw assumes that you have already included the Leaflet library.
@@ -20,8 +20,8 @@ L.drawVersion = "1.0.4";
  * ```js
  *      var map = L.map('map', {drawControl: true}).setView([51.505, -0.09], 13);
  *
- *      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
- *          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+ *      L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+ *          attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
  *      }).addTo(map);
  * ```
  *
@@ -31,8 +31,8 @@ L.drawVersion = "1.0.4";
  * ```js
  *      var map = L.map('map').setView([51.505, -0.09], 13);
  *
- *      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
- *          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+ *      L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+ *          attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
  *      }).addTo(map);
  *
  *      // FeatureGroup is to store editable layers
@@ -3263,7 +3263,7 @@ L.Util.extend(L.LineUtil, {
 
 	// @method segmentsIntersect(): boolean
 	// Checks to see if two line segments intersect. Does not handle degenerate cases.
-	// http://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf
+	// https://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf
 	segmentsIntersect: function (/*Point*/ p, /*Point*/ p1, /*Point*/ p2, /*Point*/ p3) {
 		return this._checkCounterclockwise(p, p2, p3) !==
 			this._checkCounterclockwise(p1, p2, p3) &&
@@ -3729,7 +3729,7 @@ L.Toolbar = L.Class.extend({
 	},
 
 	/* Detect iOS based on browser User Agent, based on:
-	 * http://stackoverflow.com/a/9039885 */
+	 * https://stackoverflow.com/a/9039885 */
 	_detectIOS: function () {
 		var iOS = (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 		return iOS;

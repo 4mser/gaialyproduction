@@ -52,8 +52,8 @@
 	<div id="map" style="width: 800px; height: 600px; border: 1px solid #ccc"></div>
 	<button id="changeColor">Rectangle -> Blue</button>
 	<script>
-		var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-			osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+		var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			osmAttrib = '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib}),
 			map = new L.Map('map', {layers: [osm], center: new L.LatLng(48.48988, 1.39638), zoom: 14 });
 

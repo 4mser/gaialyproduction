@@ -354,12 +354,12 @@
                 {
                     "name": "Dragonfly Development Inc.",
                     "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
+                    "homepage": "https://dflydev.com"
                 },
                 {
                     "name": "Beau Simensen",
                     "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
+                    "homepage": "https://beausimensen.com"
                 },
                 {
                     "name": "Carlos Frutos",
@@ -3103,7 +3103,7 @@
                 {
                     "name": "Ben Corlett",
                     "email": "bencorlett@me.com",
-                    "homepage": "http://www.webcomm.com.au",
+                    "homepage": "https://www.webcomm.com.au",
                     "role": "Developer"
                 }
             ],
@@ -3252,7 +3252,7 @@
                 }
             ],
             "description": "An HTML5 parser and serializer.",
-            "homepage": "http://masterminds.github.io/html5-php",
+            "homepage": "https://masterminds.github.io/html5-php",
             "keywords": [
                 "HTML5",
                 "dom",
@@ -3305,7 +3305,7 @@
                 {
                     "name": "Serban Ghita",
                     "email": "serbanghita@gmail.com",
-                    "homepage": "http://mobiledetect.net",
+                    "homepage": "https://mobiledetect.net",
                     "role": "Developer"
                 }
             ],
@@ -3394,7 +3394,7 @@
                 {
                     "name": "Mathias Verraes",
                     "email": "mathias@verraes.net",
-                    "homepage": "http://verraes.net"
+                    "homepage": "https://verraes.net"
                 },
                 {
                     "name": "Márk Sági-Kazár",
@@ -3406,7 +3406,7 @@
                 }
             ],
             "description": "PHP implementation of Fowler's Money pattern",
-            "homepage": "http://moneyphp.org",
+            "homepage": "https://moneyphp.org",
             "keywords": [
                 "Value Object",
                 "money",
@@ -4271,7 +4271,7 @@
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
-            "homepage": "http://phpseclib.sourceforge.net",
+            "homepage": "https://phpseclib.sourceforge.net",
             "keywords": [
                 "BigInteger",
                 "aes",
@@ -4548,7 +4548,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Standard interfaces for event handling.",
@@ -4886,11 +4886,11 @@
                 {
                     "name": "Justin Hileman",
                     "email": "justin@justinhileman.info",
-                    "homepage": "http://justinhileman.com"
+                    "homepage": "https://justinhileman.com"
                 }
             ],
             "description": "An interactive shell for modern PHP.",
-            "homepage": "http://psysh.org",
+            "homepage": "https://psysh.org",
             "keywords": [
                 "REPL",
                 "console",
@@ -7802,7 +7802,7 @@
             "authors": [
                 {
                     "name": "Lars Moelleken",
-                    "homepage": "http://www.moelleken.org/"
+                    "homepage": "https://www.moelleken.org/"
                 }
             ],
             "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
@@ -8475,7 +8475,7 @@
                 {
                     "name": "Maxime Bouroumeau-Fuseau",
                     "email": "maxime.bouroumeau@gmail.com",
-                    "homepage": "http://maximebf.com"
+                    "homepage": "https://maximebf.com"
                 },
                 {
                     "name": "Barry vd. Heuvel",
@@ -9673,7 +9673,7 @@
                 }
             ],
             "description": "Provides functionality to handle HHVM/PHP environments",
-            "homepage": "http://www.github.com/sebastianbergmann/environment",
+            "homepage": "https://www.github.com/sebastianbergmann/environment",
             "keywords": [
                 "Xdebug",
                 "environment",
@@ -9816,7 +9816,7 @@
                 }
             ],
             "description": "Snapshotting of global state",
-            "homepage": "http://www.github.com/sebastianbergmann/global-state",
+            "homepage": "https://www.github.com/sebastianbergmann/global-state",
             "keywords": [
                 "global state"
             ],
