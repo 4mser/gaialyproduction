@@ -775,14 +775,14 @@ const GeoRasterLayer = L.GridLayer.extend({
     if (L.Browser.ielt9 && this.options.opacity < 1) {
       L.DomUtil.setOpacity(tile, this.options.opacity);
     } // without this hack, tiles disappear after zoom on Chrome for Android
-    // https://github.com/Leaflet/Leaflet/issues/2078
+    // http://github.com/Leaflet/Leaflet/issues/2078
 
 
     if (L.Browser.android && !L.Browser.android23) {
       tile.style.WebkitBackfaceVisibility = "hidden";
     }
   },
-  // method from https://github.com/Leaflet/Leaflet/blob/bb1d94ac7f2716852213dd11563d89855f8d6bb1/src/layer/ImageOverlay.js
+  // method from http://github.com/Leaflet/Leaflet/blob/bb1d94ac7f2716852213dd11563d89855f8d6bb1/src/layer/ImageOverlay.js
   getBounds: function () {
     this.initBounds();
     return this._bounds;

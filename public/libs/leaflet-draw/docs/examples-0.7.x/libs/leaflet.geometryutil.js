@@ -193,7 +193,7 @@ L.GeometryUtil = L.extend(L.GeometryUtil || {}, {
         }
         
         // if we don't have here a Polyline, that means layer is incorrect
-        // see https://github.com/makinacorpus/Leaflet.GeometryUtil/issues/23
+        // see http://github.com/makinacorpus/Leaflet.GeometryUtil/issues/23
         if (! ( layer instanceof L.Polyline ) )
             return result;
 
@@ -652,7 +652,7 @@ L.GeometryUtil = L.extend(L.GeometryUtil || {}, {
        @param {float}: heading in degrees, clockwise from 0 degrees north.
        @param {float}: distance in meters
        @returns {L.latLng} the destination point.
-       Many thanks to Chris Veness at https://www.movable-type.co.uk/scripts/latlong.html
+       Many thanks to Chris Veness at http://www.movable-type.co.uk/scripts/latlong.html
        for a great reference and examples.
     */
     destination: function(latlng, heading, distance) {

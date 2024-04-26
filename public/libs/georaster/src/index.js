@@ -84,7 +84,7 @@ class GeoRaster {
     if (this._url) {
       // initialize these outside worker to avoid weird worker error
       // I don't see how cache option is passed through with fromUrl,
-      // though constantinius says it should work: https://github.com/geotiffjs/geotiff.js/issues/61
+      // though constantinius says it should work: http://github.com/geotiffjs/geotiff.js/issues/61
       const ovrURL = this._url + '.ovr';
       return urlExists(ovrURL).then(ovrExists => {
         if (debug) console.log('overview exists:', ovrExists);

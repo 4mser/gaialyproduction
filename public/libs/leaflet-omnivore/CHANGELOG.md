@@ -13,16 +13,16 @@
 
 ## 0.3.1
 
-* Updates [wellknown](https://github.com/mapbox/wellknown) to 0.3.0 with exponent coordinate support
-* Updates [togeojson](https://github.com/mapbox/togeojson) to 0.10.1 with timestamp, ie9 feature id, gx:Track, gx:MultiTrack support
+* Updates [wellknown](http://github.com/mapbox/wellknown) to 0.3.0 with exponent coordinate support
+* Updates [togeojson](http://github.com/mapbox/togeojson) to 0.10.1 with timestamp, ie9 feature id, gx:Track, gx:MultiTrack support
 
 ## 0.3.0
 
-* Includes [encoded polyline](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) support.
+* Includes [encoded polyline](http://developers.google.com/maps/documentation/utilities/polylinealgorithm) support.
 
 ## 0.2.0
 
-* Only includes the necessary parts of [TopoJSON](https://github.com/mbostock/topojson): less bytes,
+* Only includes the necessary parts of [TopoJSON](http://github.com/mbostock/topojson): less bytes,
   and **IE9** and **IE10** are now supported.
 * Tests now use Sauce Labs and run on real browsers for every commit.
 * Builds now use an `npm` script rather than a Makefile.

@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoTIFF/georaster.git"
+    "url": "git+http://github.com/GeoTIFF/georaster.git"
   },
   "keywords": [
     "geotiff",
@@ -37,9 +37,9 @@
   "author": "Daniel Dufour and Steve Peyton",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GeoTIFF/georaster/issues"
+    "url": "http://github.com/GeoTIFF/georaster/issues"
   },
-  "homepage": "https://github.com/GeoTIFF/georaster#readme",
+  "homepage": "http://github.com/GeoTIFF/georaster#readme",
   "dependencies": {
     "cross-fetch": "^3.0.4",
     "georaster-to-canvas": "0.2.0",

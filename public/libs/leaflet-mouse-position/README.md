@@ -32,7 +32,7 @@ These are the available options:
 
 `prefix:` A string to be prepended to the coordinates. Defaults to the empty string ‘’.
 
-`wrapLng:` Controls if longitude values will be [wrapped](https://leafletjs.com/reference-1.5.0.html#latlng-wrap). Defaults to true.
+`wrapLng:` Controls if longitude values will be [wrapped](http://leafletjs.com/reference-1.5.0.html#latlng-wrap). Defaults to true.
 
 `formatter:` A custom function to format the entire value. Arguments: numerical longitude value, numerical latitude value. Return value: formatted string.
  Defaults to undefined. If defined will ignore: `lngFirst`, `lngFormatter`, `latFormatter` and `prefix`.
@@ -42,12 +42,12 @@ These are the available options:
 These are the available methods:
 
 `getLatLng:` Request the last recorded cursor position, as a
-[LatLng](https://leafletjs.com/reference-1.3.2.html#latlng) object.
+[LatLng](http://leafletjs.com/reference-1.3.2.html#latlng) object.
 
 ## License
 
 MIT License (MIT)
 
-[npm-image]: https://badge.fury.io/js/leaflet-mouse-position.svg
-[npm-url]: https://www.npmjs.com/package/leaflet-mouse-position
-[npm-downloads-image]: https://img.shields.io/npm/dt/leaflet-mouse-position.svg
+[npm-image]: http://badge.fury.io/js/leaflet-mouse-position.svg
+[npm-url]: http://www.npmjs.com/package/leaflet-mouse-position
+[npm-downloads-image]: http://img.shields.io/npm/dt/leaflet-mouse-position.svg

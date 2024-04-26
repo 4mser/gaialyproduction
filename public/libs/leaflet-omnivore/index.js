@@ -34,7 +34,7 @@ function addData(l, d) {
 }
 
 /**
- * Load a [GeoJSON](https://geojson.org/) document into a layer and return the layer.
+ * Load a [GeoJSON](http://geojson.org/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -52,7 +52,7 @@ function geojsonLoad(url, options, customLayer) {
 }
 
 /**
- * Load a [TopoJSON](https://github.com/mbostock/topojson) document into a layer and return the layer.
+ * Load a [TopoJSON](http://github.com/mbostock/topojson) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -121,7 +121,7 @@ function gpxLoad(url, options, customLayer) {
 }
 
 /**
- * Load a [KML](https://developers.google.com/kml/documentation/) document into a layer and return the layer.
+ * Load a [KML](http://developers.google.com/kml/documentation/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options

@@ -84,7 +84,7 @@
     @endpush
 
     @push('scripts')
-        <script src="https://js.stripe.com/v3/"></script>
+        <script src="http://js.stripe.com/v3/"></script>
         <script>
             function calcCredits(el) {
 

@@ -72,14 +72,14 @@
 
                 // Layers
                 let osmLayer = L.tileLayer(
-                    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                         maxZoom: 23,
-                        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                        attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                     }
                 );
                 osmLayer.addTo(map);
                 let googleLayer = L.tileLayer(
-                    "https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}", {
+                    "http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}", {
                         attribution: "google",
                     }
                 );

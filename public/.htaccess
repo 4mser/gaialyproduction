@@ -6,8 +6,8 @@
     RewriteEngine On
 
     # Handle Authorization Header
-    RewriteCond %{https:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{https:Authorization}]
+    RewriteCond %{http:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{http:Authorization}]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
