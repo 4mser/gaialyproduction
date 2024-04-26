@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+/** navigation-menu > Sidebar **/
+.sidebar-item a {
+    font-weight: bold;
+    color: #95989a;
+}
+.sidebar-item a:hover,
+.sidebar-item-active {
+    background-color: #fcfcfc;
+    border-left: 5px solid #27b1bb;
+    color: #27b1bb;
+}
+/** navigation-menu > Sidebar  **/
