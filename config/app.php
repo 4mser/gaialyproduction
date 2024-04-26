@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://localhost'),
+    'url' => env('APP_URL', 'https://gaialyproduction-production.up.railway.app'),
 
     'asset_url' => env('ASSET_URL', null),
 
