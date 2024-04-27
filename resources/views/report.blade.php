@@ -125,7 +125,7 @@
     <div style="text-align:center; margin-top: 280px; margin-bottom:30px;">
         @if (empty(auth()->user()->parentUser()->first()->company_photo_path
             ))
-            <img style="width:200px;" src="{{ secure_asset('img/logo.png') }}" />
+            <img style="width:200px;" src="{{ public_path('img/logo.png') }}" />
         @else
             <img style="width:150px;" src="{{ uploads_path(auth()->user()->parentUser()->first()->company_photo_path) }}" />
         @endif
