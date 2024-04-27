@@ -44,9 +44,9 @@
   "author": "Tom MacWright",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "http://github.com/mapbox/leaflet-omnivore/issues"
+    "url": "https://github.com/mapbox/leaflet-omnivore/issues"
   },
-  "homepage": "http://github.com/mapbox/leaflet-omnivore",
+  "homepage": "https://github.com/mapbox/leaflet-omnivore",
   "dependencies": {
     "csv2geojson": "~5.0.0",
     "togeojson": "0.13.0",

@@ -39,7 +39,7 @@ DIRP_VERBOSE_LEVEL_NUM = 3  # 3: Total number
 class dirp_rjpeg_version_t(Structure):
     """
     References:
-        * [DJI Thermal SDK](http://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
+        * [DJI Thermal SDK](https://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
     """
 
     _fields_ = [
@@ -55,7 +55,7 @@ class dirp_rjpeg_version_t(Structure):
 class dirp_resolotion_t(Structure):
     """
     References:
-        * [DJI Thermal SDK](http://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
+        * [DJI Thermal SDK](https://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
     """
 
     _fields_ = [
@@ -69,7 +69,7 @@ class dirp_resolotion_t(Structure):
 class dirp_measurement_params_t(Structure):
     """
     References:
-        * [DJI Thermal SDK](http://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
+        * [DJI Thermal SDK](https://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
     """
 
     _fields_ = [
@@ -619,7 +619,7 @@ class Thermal:
         """
         Parser infrared camera data as `NumPy` data`.
 
-        Equations to convert to temperature see http://130.15.24.88/exiftool/forum/index.php/topic,4898.60.html or http://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
+        Equations to convert to temperature see https://130.15.24.88/exiftool/forum/index.php/topic,4898.60.html or https://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
 
         Args:
             image_filename: str, relative path of R-JPEG image
@@ -646,9 +646,9 @@ class Thermal:
             np.ndarray: temperature array
 
         References:
-            * from http://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
-            * from http://github.com/detecttechnologies/thermal_base
-            * from http://github.com/aloisklink/flirextractor/blob/1fc759808c747ad5562a9ddb3cd75c4def8a3f69/flirextractor/raw_temp_to_celcius.py
+            * from https://github.com/gtatters/Thermimage/blob/master/R/raw2temp.R
+            * from https://github.com/detecttechnologies/thermal_base
+            * from https://github.com/aloisklink/flirextractor/blob/1fc759808c747ad5562a9ddb3cd75c4def8a3f69/flirextractor/raw_temp_to_celcius.py
         """
         thermal_img_bytes = subprocess.check_output([
             self._exiftool_filename, '-RawThermalImage', '-b', image_filename
@@ -750,7 +750,7 @@ class Thermal:
             np.ndarray: temperature array
 
         References:
-            * [DJI Thermal SDK](http://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
+            * [DJI Thermal SDK](https://www.dji.com/cn/downloads/softwares/dji-thermal-sdk)
         """
         with open(image_filename, 'rb') as file:
             raw = file.read()

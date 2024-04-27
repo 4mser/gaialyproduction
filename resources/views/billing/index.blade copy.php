@@ -68,7 +68,7 @@
 
 
     @push('scripts')
-        <script src="http://js.stripe.com/v3/"></script>
+        <script src="https://js.stripe.com/v3/"></script>
         <script>
             @if (request()->has('res') && request()->get('res') == 'success')
                 toast("success", "{{ __('Payment successful!') }}");

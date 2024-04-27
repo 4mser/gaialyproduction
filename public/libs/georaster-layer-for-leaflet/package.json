@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+http://github.com/GeoTIFF/georaster-layer-for-leaflet.git"
+    "url": "git+https://github.com/GeoTIFF/georaster-layer-for-leaflet.git"
   },
   "keywords": [
     "geotiff",
@@ -62,9 +62,9 @@
   "author": "Daniel Dufour and Steve Peyton",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "http://github.com/GeoTIFF/georaster-layer-for-leaflet/issues"
+    "url": "https://github.com/GeoTIFF/georaster-layer-for-leaflet/issues"
   },
-  "homepage": "http://github.com/GeoTIFF/georaster-layer-for-leaflet#readme",
+  "homepage": "https://github.com/GeoTIFF/georaster-layer-for-leaflet#readme",
   "dependencies": {
     "@types/geojson": "^7946.0.10",
     "@types/node": "^18.7.13",

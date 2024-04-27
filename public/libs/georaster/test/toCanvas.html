@@ -6,7 +6,7 @@
   <body>
     <div id="container"></div>
     <script>
-        fetch("http://s3.amazonaws.com/geoblaze/wildfires.tiff")
+        fetch("https://s3.amazonaws.com/geoblaze/wildfires.tiff")
         .then(response => response.arrayBuffer())
         .then(parseGeoraster)
         .then(georaster => {
@@ -16,7 +16,7 @@
             document.getElementById("container").appendChild(canvas);
         });
 
-        fetch("http://s3.amazonaws.com/geoblaze/LC08_L1TP_045032_20180811_20180815_01_T1_B7_100x100.TIF")
+        fetch("https://s3.amazonaws.com/geoblaze/LC08_L1TP_045032_20180811_20180815_01_T1_B7_100x100.TIF")
         .then(response => response.arrayBuffer())
         .then(parseGeoraster)
         .then(georaster => {

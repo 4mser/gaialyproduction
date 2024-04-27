@@ -1,5 +1,5 @@
 /*
- Leaflet, a JavaScript library for mobile-friendly interactive maps. http://leafletjs.com
+ Leaflet, a JavaScript library for mobile-friendly interactive maps. https://leafletjs.com
  (c) 2010-2013, Vladimir Agafonkin
  (c) 2010-2011, CloudMade
 */
@@ -155,7 +155,7 @@ L.Util = {
 
 (function () {
 
-	// inspired by http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+	// inspired by https://paulirish.com/2011/requestanimationframe-for-smart-animating/
 
 	function getPrefixed(name) {
 		var i, fn,
@@ -536,7 +536,7 @@ L.Mixin.Events.fire = L.Mixin.Events.fireEvent;
 
 
 	// PhantomJS has 'ontouchstart' in document.documentElement, but doesn't actually support touch.
-	// http://github.com/Leaflet/Leaflet/pull/1434#issuecomment-13843151
+	// https://github.com/Leaflet/Leaflet/pull/1434#issuecomment-13843151
 
 	var touch = !window.L_NO_TOUCH && !phantomjs && (function () {
 
@@ -1186,7 +1186,7 @@ L.LatLng.prototype = {
 		        L.Util.formatNum(this.lng, precision) + ')';
 	},
 
-	// Haversine distance formula, see http://en.wikipedia.org/wiki/Haversine_formula
+	// Haversine distance formula, see https://en.wikipedia.org/wiki/Haversine_formula
 	// TODO move to projection code, LatLng shouldn't know about Earth
 	distanceTo: function (other) { // (LatLng) -> Number
 		other = L.latLng(other);
@@ -1563,7 +1563,7 @@ L.Map = L.Class.extend({
 		this._initContainer(id);
 		this._initLayout();
 
-		// hack for http://github.com/Leaflet/Leaflet/issues/1980
+		// hack for https://github.com/Leaflet/Leaflet/issues/1980
 		this._onResize = L.bind(this._onResize, this);
 
 		this._initEvents();
@@ -2789,7 +2789,7 @@ L.TileLayer = L.Class.extend({
 			    se = this._map.unproject(sePoint);
 
 			// TODO temporary hack, will be removed after refactoring projections
-			// http://github.com/Leaflet/Leaflet/issues/1618
+			// https://github.com/Leaflet/Leaflet/issues/1618
 			if (!options.continuousWorld && !options.noWrap) {
 				nw = nw.wrap();
 				se = se.wrap();
@@ -2829,7 +2829,7 @@ L.TileLayer = L.Class.extend({
 			this._tileContainer.removeChild(tile);
 		}
 
-		// for http://github.com/CloudMade/Leaflet/issues/137
+		// for https://github.com/CloudMade/Leaflet/issues/137
 		if (!L.Browser.android) {
 			tile.onload = null;
 			tile.src = L.Util.emptyImageUrl;
@@ -2942,7 +2942,7 @@ L.TileLayer = L.Class.extend({
 			L.DomUtil.setOpacity(tile, this.options.opacity);
 		}
 		// without this hack, tiles disappear after zoom on Chrome for Android
-		// http://github.com/Leaflet/Leaflet/issues/2078
+		// https://github.com/Leaflet/Leaflet/issues/2078
 		if (L.Browser.mobileWebkit3d) {
 			tile.style.WebkitBackfaceVisibility = 'hidden';
 		}
@@ -4607,7 +4607,7 @@ L.Map.include({
  * Extends L.Path with SVG-specific rendering code.
  */
 
-L.Path.SVG_NS = 'http://www.w3.org/2000/svg';
+L.Path.SVG_NS = 'https://www.w3.org/2000/svg';
 
 L.Browser.svg = !!(document.createElementNS && document.createElementNS(L.Path.SVG_NS, 'svg').createSVGRect);
 
@@ -5275,7 +5275,7 @@ L.LineUtil = {
 		return this._sqClosestPointOnSegment(p, p1, p2);
 	},
 
-	// Douglas-Peucker simplification, see http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
+	// Douglas-Peucker simplification, see https://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
 	_simplifyDP: function (points, sqTolerance) {
 
 		var len = points.length,
@@ -7163,8 +7163,8 @@ L.extend(L.DomEvent, {
 	_pointerDocumentListener: false,
 
 	// Provides a touch events wrapper for (ms)pointer events.
-	// Based on changes by veproza http://github.com/CloudMade/Leaflet/pull/1019
-	//ref http://www.w3.org/TR/pointerevents/ http://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
+	// Based on changes by veproza https://github.com/CloudMade/Leaflet/pull/1019
+	//ref https://www.w3.org/TR/pointerevents/ https://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
 
 	addPointerListener: function (obj, type, handler, id) {
 
@@ -8106,7 +8106,7 @@ L.control.zoom = function (options) {
 L.Control.Attribution = L.Control.extend({
 	options: {
 		position: 'bottomright',
-		prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+		prefix: '<a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
 	},
 
 	initialize: function (options) {
@@ -8434,7 +8434,7 @@ L.Control.Layers = L.Control.extend({
 			else {
 				L.DomEvent.on(link, 'focus', this._expand, this);
 			}
-			//Work around for Firefox android issue http://github.com/Leaflet/Leaflet/issues/2033
+			//Work around for Firefox android issue https://github.com/Leaflet/Leaflet/issues/2033
 			L.DomEvent.on(form, 'click', function () {
 				setTimeout(L.bind(this._onInputClick, this), 0);
 			}, this);
@@ -8507,7 +8507,7 @@ L.Control.Layers = L.Control.extend({
 		}
 	},
 
-	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see https://bit.ly/PqYLBe)
 	_createRadioElement: function (name, checked) {
 
 		var radioHtml = '<input type="radio" class="leaflet-control-layers-selector" name="' + name + '"';

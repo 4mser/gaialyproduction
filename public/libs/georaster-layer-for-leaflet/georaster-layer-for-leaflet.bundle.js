@@ -449,7 +449,7 @@ var GeoRasterLayer = L.GridLayer.extend({
 
     return tile;
   },
-  // method from http://github.com/Leaflet/Leaflet/blob/bb1d94ac7f2716852213dd11563d89855f8d6bb1/src/layer/ImageOverlay.js
+  // method from https://github.com/Leaflet/Leaflet/blob/bb1d94ac7f2716852213dd11563d89855f8d6bb1/src/layer/ImageOverlay.js
   getBounds: function getBounds() {
     this.initBounds();
     return this._bounds;
@@ -635,4 +635,4 @@ if (typeof window !== "undefined") {
   self["GeoRasterLayer"] = GeoRasterLayer; // jshint ignore:line
 }
 
-console.warn('DEPRECATION WARNING: Hello. You are probably using an old link to an old version of georaster-layer-for-leaflet that will be removed at the end of 2021. You can probably remove this warning by upgrading to using http://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js. If that does not work, please consult http://github.com/GeoTIFF/georaster-layer-for-leaflet for more instructions or email me directly at daniel.j.dufour@gmail.com. Happy to help! :-)');
+console.warn('DEPRECATION WARNING: Hello. You are probably using an old link to an old version of georaster-layer-for-leaflet that will be removed at the end of 2021. You can probably remove this warning by upgrading to using https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js. If that does not work, please consult https://github.com/GeoTIFF/georaster-layer-for-leaflet for more instructions or email me directly at daniel.j.dufour@gmail.com. Happy to help! :-)');

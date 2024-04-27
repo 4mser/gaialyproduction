@@ -1,25 +1,25 @@
 # leaflet-omnivore
 
-![](http://farm8.staticflickr.com/7373/12376158164_e335b4e61d_b.jpg)
+![](https://farm8.staticflickr.com/7373/12376158164_e335b4e61d_b.jpg)
 
-[Leaflet](http://leafletjs.com/) supports the [GeoJSON](http://geojson.org/) format
+[Leaflet](https://leafletjs.com/) supports the [GeoJSON](https://geojson.org/) format
 by default. What if you have something else? That's where omnivore comes in.
 
 It currently supports:
 
-* [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) (via [csv2geojson](http://github.com/mapbox/csv2geojson))
-* GPX (via [toGeoJSON](http://github.com/mapbox/togeojson))
-* [KML](http://developers.google.com/kml/documentation/) (via [toGeoJSON](http://github.com/mapbox/togeojson))
-* [WKT](http://en.wikipedia.org/wiki/Well-known_text) (via [wellknown](http://github.com/mapbox/wellknown))
-* [TopoJSON](http://github.com/mbostock/topojson)
-* [Encoded Polylines](http://developers.google.com/maps/documentation/utilities/polylinealgorithm) via [polyline](http://github.com/mapbox/polyline)
+* [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) (via [csv2geojson](https://github.com/mapbox/csv2geojson))
+* GPX (via [toGeoJSON](https://github.com/mapbox/togeojson))
+* [KML](https://developers.google.com/kml/documentation/) (via [toGeoJSON](https://github.com/mapbox/togeojson))
+* [WKT](https://en.wikipedia.org/wiki/Well-known_text) (via [wellknown](https://github.com/mapbox/wellknown))
+* [TopoJSON](https://github.com/mbostock/topojson)
+* [Encoded Polylines](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) via [polyline](https://github.com/mapbox/polyline)
 
-Omnivore also includes an AJAX library, [corslite](http://github.com/mapbox/corslite),
+Omnivore also includes an AJAX library, [corslite](https://github.com/mapbox/corslite),
 so you can specify what you want to add to the map with just a URL.
 
 ## Installation
 
-use it easily with the [Mapbox Plugins CDN](http://mapbox.com/mapbox.js/plugins/#leaflet-omnivore):
+use it easily with the [Mapbox Plugins CDN](https://mapbox.com/mapbox.js/plugins/#leaflet-omnivore):
 
 ```html
 <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
@@ -32,13 +32,13 @@ Or download `leaflet-omnivore.min.js` from this repository.
 
 Live examples:
 
-* [WKT](http://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-wkt/)
-* [TopoJSON](http://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-topojson/)
-* [Tooltips](http://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-kml-tooltip/)
-* [KML](http://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-kml/)
-* [GPX](http://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-gpx/)
-* [Icons](http://www.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv-custom-style/)
-* [CSV](http://www.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv/)
+* [WKT](https://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-wkt/)
+* [TopoJSON](https://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-topojson/)
+* [Tooltips](https://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-kml-tooltip/)
+* [KML](https://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-kml/)
+* [GPX](https://www.mapbox.com/mapbox.js/example/v1.0.0/omnivore-gpx/)
+* [Icons](https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv-custom-style/)
+* [CSV](https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv/)
 
 ```js
 var map = L.mapbox.map('map', 'mapbox.streets')
@@ -66,7 +66,7 @@ by passing it as `customLayer`, as long as it supports events and `addData()`.
 You can also use this API to pass custom options to a `L.geoJson()` instance.:
 
 
-* `.csv(url, parser_options?, customLayer?)`: Load & parse CSV, and return layer. Options are the same as [csv2geojson](http://github.com/mapbox/csv2geojson#api): `latfield, lonfield, delimiter`
+* `.csv(url, parser_options?, customLayer?)`: Load & parse CSV, and return layer. Options are the same as [csv2geojson](https://github.com/mapbox/csv2geojson#api): `latfield, lonfield, delimiter`
 * `.csv.parse(csvString, parser_options?)`: Parse CSV, and return layer.
 * `.kml(url)`: Load & parse KML, and return layer.
 * `.kml.parse(kmlString | gpxDom)`: Parse KML from a string of XML or XML DOM, and return layer.
@@ -85,7 +85,7 @@ Valid options:
 #### polyline
 
 * `precision` will change how the polyline is interpreted. By default, the value
-  is 5. This is the [factor in the algorithm](http://developers.google.com/maps/documentation/utilities/polylinealgorithm),
+  is 5. This is the [factor in the algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm),
   by default 1e5, which is adjustable.
 
 ### Custom Layers
@@ -107,7 +107,7 @@ Adding custom styles to a GeoJSON layer:
 
 ```js
 var customLayer = L.geoJson(null, {
-    // http://leafletjs.com/reference.html#geojson-style
+    // https://leafletjs.com/reference.html#geojson-style
     style: function(feature) {
         return { color: '#f00' };
     }
@@ -151,7 +151,7 @@ after the call.
 
 ## Development
 
-This is a [browserify](http://browserify.org/) project:
+This is a [browserify](https://browserify.org/) project:
 
 ```sh
 git clone git@github.com:mapbox/leaflet-omnivore.git
@@ -173,12 +173,12 @@ to parse formats.
 ## FAQ
 
 * **What if I just want one format?** Lucky for you, each format is specified
-  in a different module, so you can just use [TopoJSON](http://github.com/mbostock/topojson),
-  [csv2geojson](http://github.com/mapbox/csv2geojson), [wellknown](http://github.com/mapbox/wellknown), or
-  [toGeoJSON](http://github.com/mapbox/togeojson)
+  in a different module, so you can just use [TopoJSON](https://github.com/mbostock/topojson),
+  [csv2geojson](https://github.com/mapbox/csv2geojson), [wellknown](https://github.com/mapbox/wellknown), or
+  [toGeoJSON](https://github.com/mapbox/togeojson)
   individually.
-* **My AJAX request is failing for a cross-domain request**. Read up on the [Same Origin Restriction](http://en.wikipedia.org/wiki/Same-origin_policy).
-  By default, we use corslite, so cross-domain requests will try to use [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+* **My AJAX request is failing for a cross-domain request**. Read up on the [Same Origin Restriction](https://en.wikipedia.org/wiki/Same-origin_policy).
+  By default, we use corslite, so cross-domain requests will try to use [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
   if your server and browser supports it, but if one of them doesn't, there's no
   way on the internet to support your request.
-* **Why isn't JSONP supported?** [Here's why](http://gist.github.com/tmcw/6244497).
+* **Why isn't JSONP supported?** [Here's why](https://gist.github.com/tmcw/6244497).

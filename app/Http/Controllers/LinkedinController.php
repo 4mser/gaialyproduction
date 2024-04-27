@@ -29,7 +29,7 @@ class LinkedinController extends Controller
             'state' => $state,
             'scope' => 'openid,profile,email',
         ]);
-        $url = 'http://www.linkedin.com/oauth/v2/authorization?' . $queryParams;
+        $url = 'https://www.linkedin.com/oauth/v2/authorization?' . $queryParams;
         return redirect($url);
     }
 
@@ -44,7 +44,7 @@ class LinkedinController extends Controller
             if ($linkedinState == $state) {
                 $code = $request->input('code');
                 $http = new Client();
-                $response = $http->post('http://www.linkedin.com/oauth/v2/accessToken', [
+                $response = $http->post('https://www.linkedin.com/oauth/v2/accessToken', [
                     'Content-Type' => 'application/x-www-form-urlencoded',
                     'form_params' => [
                         'grant_type' => 'authorization_code',
@@ -57,7 +57,7 @@ class LinkedinController extends Controller
                 $response = json_decode($response->getBody()->getContents(), true);
                 $accessToken = $response['access_token'];
 
-                $response = $http->get('http://api.linkedin.com/v2/userinfo', [
+                $response = $http->get('https://api.linkedin.com/v2/userinfo', [
                     'headers' => [
                         'Authorization' => 'Bearer ' . $accessToken,
                     ],

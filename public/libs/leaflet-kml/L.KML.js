@@ -450,7 +450,7 @@ L.KMLMarker = L.Marker.extend({
 	}
 });
 
-// Inspired by http://github.com/bbecquet/Leaflet.PolylineDecorator/tree/master/src
+// Inspired by https://github.com/bbecquet/Leaflet.PolylineDecorator/tree/master/src
 L.RotatedImageOverlay = L.ImageOverlay.extend({
 	options: {
 		angle: 0

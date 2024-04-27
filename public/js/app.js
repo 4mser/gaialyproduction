@@ -2285,7 +2285,7 @@ magic("el", (el) => el);
 warnMissingPluginMagic("Focus", "focus", "focus");
 warnMissingPluginMagic("Persist", "persist", "persist");
 function warnMissingPluginMagic(name, magicName, slug) {
-  magic(magicName, (el) => warn(`You can't use [$${directiveName}] without first installing the "${name}" plugin here: http://alpinejs.dev/plugins/${slug}`, el));
+  magic(magicName, (el) => warn(`You can't use [$${directiveName}] without first installing the "${name}" plugin here: https://alpinejs.dev/plugins/${slug}`, el));
 }
 
 // packages/alpinejs/src/directives/x-modelable.js
@@ -2960,7 +2960,7 @@ warnMissingPluginDirective("Intersect", "intersect", "intersect");
 warnMissingPluginDirective("Focus", "trap", "focus");
 warnMissingPluginDirective("Mask", "mask", "mask");
 function warnMissingPluginDirective(name, directiveName2, slug) {
-  directive(directiveName2, (el) => warn(`You can't use [x-${directiveName2}] without first installing the "${name}" plugin here: http://alpinejs.dev/plugins/${slug}`, el));
+  directive(directiveName2, (el) => warn(`You can't use [x-${directiveName2}] without first installing the "${name}" plugin here: https://alpinejs.dev/plugins/${slug}`, el));
 }
 
 // packages/alpinejs/src/index.js
@@ -4155,7 +4155,7 @@ function encode(val) {
 /**
  * Build a URL by appending params to the end
  *
- * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {string} url The base of the url (e.g., https://www.google.com)
  * @param {object} [params] The params to be appended
  * @returns {string} The formatted url
  */
@@ -4386,7 +4386,7 @@ module.exports = (
 
         urlParsingNode.setAttribute('href', href);
 
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+        // urlParsingNode provides the UrlUtils interface - https://url.spec.whatwg.org/#urlutils
         return {
           href: urlParsingNode.href,
           protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
@@ -4462,7 +4462,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 var utils = __webpack_require__(/*! ./../utils */ "./node_modules/axios/lib/utils.js");
 
 // Headers whose duplicates are ignored by node
-// c.f. http://nodejs.org/api/http.html#http_message_headers
+// c.f. https://nodejs.org/api/http.html#http_message_headers
 var ignoreDuplicateOf = [
   'age', 'authorization', 'content-length', 'content-type', 'etag',
   'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
@@ -5093,10 +5093,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /* module decorator */ module = __webpack_require__.nmd(module);
 var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * @license
- * Lodash <http://lodash.com/>
- * Copyright OpenJS Foundation and other contributors <http://openjsf.org/>
- * Released under MIT license <http://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <https://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 ;(function() {
@@ -5111,7 +5111,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
-  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try http://npms.io/search?q=ponyfill.',
+  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
       FUNC_ERROR_TEXT = 'Expected a function',
       INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
 
@@ -5241,7 +5241,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
   /**
    * Used to match `RegExp`
-   * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+   * [syntax characters](https://ecma-international.org/ecma-262/7.0/#sec-patterns).
    */
   var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
       reHasRegExpChar = RegExp(reRegExpChar.source);
@@ -5277,7 +5277,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
   /**
    * Used to match
-   * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+   * [ES template delimiters](https://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
    */
   var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
 
@@ -5359,12 +5359,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var reApos = RegExp(rsApos, 'g');
 
   /**
-   * Used to match [combining diacritical marks](http://en.wikipedia.org/wiki/Combining_Diacritical_Marks) and
-   * [combining diacritical marks for symbols](http://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols).
+   * Used to match [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks) and
+   * [combining diacritical marks for symbols](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols).
    */
   var reComboMark = RegExp(rsCombo, 'g');
 
-  /** Used to match [string symbols](http://mathiasbynens.be/notes/javascript-unicode). */
+  /** Used to match [string symbols](https://mathiasbynens.be/notes/javascript-unicode). */
   var reUnicode = RegExp(rsFitz + '(?=' + rsFitz + ')|' + rsSymbol + rsSeq, 'g');
 
   /** Used to match complex or compound words. */
@@ -5379,7 +5379,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     rsEmoji
   ].join('|'), 'g');
 
-  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
+  /** Used to detect strings with [zero-width joiners or code points from the astral planes](https://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
   var reHasUnicode = RegExp('[' + rsZWJ + rsAstralRange  + rsComboRange + rsVarRange + ']');
 
   /** Used to detect strings that need a more robust regexp to match words. */
@@ -6577,7 +6577,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Used to resolve the
-     * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+     * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
      * of values.
      */
     var nativeObjectToString = objectProto.toString;
@@ -7595,7 +7595,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Assigns `value` to `key` of `object` if the existing value is not equivalent
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @private
@@ -8592,7 +8592,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      */
     function baseIteratee(value) {
       // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
-      // See http://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+      // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
       if (typeof value == 'function') {
         return value;
       }
@@ -9050,7 +9050,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
         return result;
       }
       // Leverage the exponentiation by squaring algorithm for a faster repeat.
-      // See http://en.wikipedia.org/wiki/Exponentiation_by_squaring for more details.
+      // See https://en.wikipedia.org/wiki/Exponentiation_by_squaring for more details.
       do {
         if (n % 2) {
           result += string;
@@ -9641,7 +9641,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * A simple wrapper around the global [`clearTimeout`](http://mdn.io/clearTimeout).
+     * A simple wrapper around the global [`clearTimeout`](https://mdn.io/clearTimeout).
      *
      * @private
      * @param {number|Object} id The timer id or timeout object of the timer to clear.
@@ -9803,11 +9803,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       }
       // Fixes an `Array#sort` bug in the JS engine embedded in Adobe applications
       // that causes it, under certain circumstances, to provide the same value for
-      // `object` and `other`. See http://github.com/jashkenas/underscore/pull/1247
+      // `object` and `other`. See https://github.com/jashkenas/underscore/pull/1247
       // for more details.
       //
       // This also ensures a stable sort in V8 and other engines.
-      // See http://bugs.chromium.org/p/v8/issues/detail?id=90 for more details.
+      // See https://bugs.chromium.org/p/v8/issues/detail?id=90 for more details.
       return object.index - other.index;
     }
 
@@ -10137,7 +10137,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     function createCtor(Ctor) {
       return function() {
         // Use a `switch` statement to work with class constructors. See
-        // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+        // https://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
         // for more details.
         var args = arguments;
         switch (args.length) {
@@ -10154,7 +10154,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
             result = Ctor.apply(thisBinding, args);
 
         // Mimic the constructor's `return` behavior.
-        // See http://es5.github.io/#x13.2.2 for more details.
+        // See https://es5.github.io/#x13.2.2 for more details.
         return isObject(result) ? result : thisBinding;
       };
     }
@@ -10573,7 +10573,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
         precision = precision == null ? 0 : nativeMin(toInteger(precision), 292);
         if (precision && nativeIsFinite(number)) {
           // Shift with exponential notation to avoid floating-point issues.
-          // See [MDN](http://mdn.io/round#Examples) for more details.
+          // See [MDN](https://mdn.io/round#Examples) for more details.
           var pair = (toString(number) + 'e').split('e'),
               value = func(pair[0] + 'e' + (+pair[1] + precision));
 
@@ -10874,7 +10874,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
         case regexpTag:
         case stringTag:
           // Coerce regexes to strings and treat strings, primitives and objects,
-          // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+          // as equal. See https://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
           // for more details.
           return object == (other + '');
 
@@ -11663,7 +11663,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * This function is like
-     * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [`Object.keys`](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * except that it includes inherited enumerable properties.
      *
      * @private
@@ -11781,7 +11781,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * **Note:** If this function becomes hot, i.e. is invoked a lot in a short
      * period of time, it will trip its breaker and transition to an identity
      * function to avoid garbage collection pauses in V8. See
-     * [V8 issue 2070](http://bugs.chromium.org/p/v8/issues/detail?id=2070)
+     * [V8 issue 2070](https://bugs.chromium.org/p/v8/issues/detail?id=2070)
      * for more details.
      *
      * @private
@@ -11792,7 +11792,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     var setData = shortOut(baseSetData);
 
     /**
-     * A simple wrapper around the global [`setTimeout`](http://mdn.io/setTimeout).
+     * A simple wrapper around the global [`setTimeout`](https://mdn.io/setTimeout).
      *
      * @private
      * @param {Function} func The function to delay.
@@ -12082,7 +12082,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of `array` values not included in the other given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -12583,7 +12583,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Gets the index at which the first occurrence of `value` is found in `array`
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. If `fromIndex` is negative, it's used as the
      * offset from the end of `array`.
      *
@@ -12637,7 +12637,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of unique values that are included in all given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -12831,7 +12831,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Removes all given values from `array` using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.without`, this method mutates `array`. Use `_.remove`
@@ -13027,7 +13027,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * element becomes the second to last, and so on.
      *
      * **Note:** This method mutates `array` and is based on
-     * [`Array#reverse`](http://mdn.io/Array/reverse).
+     * [`Array#reverse`](https://mdn.io/Array/reverse).
      *
      * @static
      * @memberOf _
@@ -13053,7 +13053,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Creates a slice of `array` from `start` up to, but not including, `end`.
      *
      * **Note:** This method is used instead of
-     * [`Array#slice`](http://mdn.io/Array/slice) to ensure dense arrays are
+     * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
      * returned.
      *
      * @static
@@ -13450,7 +13450,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of unique values, in order, from all given arrays using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @static
@@ -13528,7 +13528,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates a duplicate-free version of an array, using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons, in which only the first occurrence of each element
      * is kept. The order of result values is determined by the order they occur
      * in the array.
@@ -13671,7 +13671,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array excluding all given values using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.pull`, this method returns a new array.
@@ -13697,7 +13697,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of unique values that is the
-     * [symmetric difference](http://en.wikipedia.org/wiki/Symmetric_difference)
+     * [symmetric difference](https://en.wikipedia.org/wiki/Symmetric_difference)
      * of the given arrays. The order of result values is determined by the order
      * they occur in the arrays.
      *
@@ -14055,7 +14055,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Gets the next value on a wrapped object following the
-     * [iterator protocol](http://mdn.io/iteration_protocols#iterator).
+     * [iterator protocol](https://mdn.io/iteration_protocols#iterator).
      *
      * @name next
      * @memberOf _
@@ -14245,8 +14245,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * invoked with three arguments: (value, index|key, collection).
      *
      * **Note:** This method returns `true` for
-     * [empty collections](http://en.wikipedia.org/wiki/Empty_set) because
-     * [everything is true](http://en.wikipedia.org/wiki/Vacuous_truth) of
+     * [empty collections](https://en.wikipedia.org/wiki/Empty_set) because
+     * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
      * elements of empty collections.
      *
      * @static
@@ -14562,7 +14562,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     /**
      * Checks if `value` is in `collection`. If `collection` is a string, it's
      * checked for a substring of `value`, otherwise
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * is used for equality comparisons. If `fromIndex` is negative, it's used as
      * the offset from the end of `collection`.
      *
@@ -14961,7 +14961,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Creates an array of shuffled values, using a version of the
-     * [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
+     * [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
      *
      * @static
      * @memberOf _
@@ -15267,7 +15267,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * This method differs from `_.bind` by allowing bound functions to reference
      * methods that may be redefined or don't yet exist. See
-     * [Peter Michaux's article](http://peter.michaux.ca/articles/lazy-function-definition-pattern)
+     * [Peter Michaux's article](https://peter.michaux.ca/articles/lazy-function-definition-pattern)
      * for more details.
      *
      * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
@@ -15426,7 +15426,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
      * until to the next tick, similar to `setTimeout` with a timeout of `0`.
      *
-     * See [David Corbacho's article](http://css-tricks.com/debouncing-throttling-explained-examples/)
+     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.debounce` and `_.throttle`.
      *
      * @static
@@ -15664,7 +15664,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * **Note:** The cache is exposed as the `cache` property on the memoized
      * function. Its creation may be customized by replacing the `_.memoize.Cache`
      * constructor with one whose instances implement the
-     * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+     * [`Map`](https://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
      * method interface of `clear`, `delete`, `get`, `has`, and `set`.
      *
      * @static
@@ -15934,7 +15934,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * an array.
      *
      * **Note:** This method is based on the
-     * [rest parameter](http://mdn.io/rest_parameters).
+     * [rest parameter](https://mdn.io/rest_parameters).
      *
      * @static
      * @memberOf _
@@ -15964,10 +15964,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     /**
      * Creates a function that invokes `func` with the `this` binding of the
      * create function and an array of arguments much like
-     * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
+     * [`Function#apply`](https://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
      *
      * **Note:** This method is based on the
-     * [spread operator](http://mdn.io/spread_operator).
+     * [spread operator](https://mdn.io/spread_operator).
      *
      * @static
      * @memberOf _
@@ -16028,7 +16028,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
      * until to the next tick, similar to `setTimeout` with a timeout of `0`.
      *
-     * See [David Corbacho's article](http://css-tricks.com/debouncing-throttling-explained-examples/)
+     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.throttle` and `_.debounce`.
      *
      * @static
@@ -16165,7 +16165,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Creates a shallow clone of `value`.
      *
      * **Note:** This method is loosely based on the
-     * [structured clone algorithm](http://mdn.io/Structured_clone_algorithm)
+     * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
      * and supports cloning arrays, array buffers, booleans, date objects, maps,
      * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
      * arrays. The own enumerable properties of `arguments` objects are cloned
@@ -16312,7 +16312,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Performs a
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * comparison between two values to determine if they are equivalent.
      *
      * @static
@@ -16762,7 +16762,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is a finite primitive number.
      *
      * **Note:** This method is based on
-     * [`Number.isFinite`](http://mdn.io/Number/isFinite).
+     * [`Number.isFinite`](https://mdn.io/Number/isFinite).
      *
      * @static
      * @memberOf _
@@ -16819,7 +16819,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is an integer.
      *
      * **Note:** This method is based on
-     * [`Number.isInteger`](http://mdn.io/Number/isInteger).
+     * [`Number.isInteger`](https://mdn.io/Number/isInteger).
      *
      * @static
      * @memberOf _
@@ -16849,7 +16849,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is a valid array-like length.
      *
      * **Note:** This method is loosely based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -16878,7 +16878,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Checks if `value` is the
-     * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+     * [language type](https://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
      * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
      *
      * @static
@@ -17026,8 +17026,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is `NaN`.
      *
      * **Note:** This method is based on
-     * [`Number.isNaN`](http://mdn.io/Number/isNaN) and is not the same as
-     * global [`isNaN`](http://mdn.io/isNaN) which returns `true` for
+     * [`Number.isNaN`](https://mdn.io/Number/isNaN) and is not the same as
+     * global [`isNaN`](https://mdn.io/isNaN) which returns `true` for
      * `undefined` and other non-number values.
      *
      * @static
@@ -17065,7 +17065,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Despite multiple requests, the core-js maintainer has made it clear: any
      * attempt to fix the detection will be obstructed. As a result, we're left
      * with little choice but to throw an error. Unfortunately, this also affects
-     * packages, like [babel-polyfill](http://www.npmjs.com/package/babel-polyfill),
+     * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
      * which rely on core-js.
      *
      * @static
@@ -17231,7 +17231,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * double precision number which isn't the result of a rounded unsafe integer.
      *
      * **Note:** This method is based on
-     * [`Number.isSafeInteger`](http://mdn.io/Number/isSafeInteger).
+     * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
      *
      * @static
      * @memberOf _
@@ -17532,7 +17532,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Converts `value` to an integer.
      *
      * **Note:** This method is loosely based on
-     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+     * [`ToInteger`](https://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
      *
      * @static
      * @memberOf _
@@ -17566,7 +17566,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * array-like object.
      *
      * **Note:** This method is based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -17727,7 +17727,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Subsequent sources overwrite property assignments of previous sources.
      *
      * **Note:** This method mutates `object` and is loosely based on
-     * [`Object.assign`](http://mdn.io/Object/assign).
+     * [`Object.assign`](https://mdn.io/Object/assign).
      *
      * @static
      * @memberOf _
@@ -18440,7 +18440,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Creates an array of the own enumerable property names of `object`.
      *
      * **Note:** Non-object values are coerced to objects. See the
-     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [ES spec](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * for more details.
      *
      * @static
@@ -19278,7 +19278,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     /*------------------------------------------------------------------------*/
 
     /**
-     * Converts `string` to [camel case](http://en.wikipedia.org/wiki/CamelCase).
+     * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
      *
      * @static
      * @memberOf _
@@ -19323,10 +19323,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Deburrs `string` by converting
-     * [Latin-1 Supplement](http://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)#Character_table)
-     * and [Latin Extended-A](http://en.wikipedia.org/wiki/Latin_Extended-A)
+     * [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)#Character_table)
+     * and [Latin Extended-A](https://en.wikipedia.org/wiki/Latin_Extended-A)
      * letters to basic Latin letters and removing
-     * [combining diacritical marks](http://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
+     * [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
      *
      * @static
      * @memberOf _
@@ -19386,16 +19386,16 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * corresponding HTML entities.
      *
      * **Note:** No other characters are escaped. To escape additional
-     * characters use a third-party library like [_he_](http://mths.be/he).
+     * characters use a third-party library like [_he_](https://mths.be/he).
      *
      * Though the ">" character is escaped for symmetry, characters like
      * ">" and "/" don't need escaping in HTML and have no special meaning
      * unless they're part of a tag or unquoted attribute value. See
-     * [Mathias Bynens's article](http://mathiasbynens.be/notes/ambiguous-ampersands)
+     * [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
      * (under "semi-related fun fact") for more details.
      *
      * When working with HTML you should always
-     * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+     * [quote attribute values](https://wonko.com/post/html-escaping) to reduce
      * XSS vectors.
      *
      * @static
@@ -19428,8 +19428,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * @returns {string} Returns the escaped string.
      * @example
      *
-     * _.escapeRegExp('[lodash](http://lodash.com/)');
-     * // => '\[lodash\]\(http://lodash\.com/\)'
+     * _.escapeRegExp('[lodash](https://lodash.com/)');
+     * // => '\[lodash\]\(https://lodash\.com/\)'
      */
     function escapeRegExp(string) {
       string = toString(string);
@@ -19440,7 +19440,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Converts `string` to
-     * [kebab case](http://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
+     * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
      *
      * @static
      * @memberOf _
@@ -19617,7 +19617,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * hexadecimal, in which case a `radix` of `16` is used.
      *
      * **Note:** This method aligns with the
-     * [ES5 implementation](http://es5.github.io/#x15.1.2.2) of `parseInt`.
+     * [ES5 implementation](https://es5.github.io/#x15.1.2.2) of `parseInt`.
      *
      * @static
      * @memberOf _
@@ -19679,7 +19679,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Replaces matches for `pattern` in `string` with `replacement`.
      *
      * **Note:** This method is based on
-     * [`String#replace`](http://mdn.io/String/replace).
+     * [`String#replace`](https://mdn.io/String/replace).
      *
      * @static
      * @memberOf _
@@ -19703,7 +19703,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Converts `string` to
-     * [snake case](http://en.wikipedia.org/wiki/Snake_case).
+     * [snake case](https://en.wikipedia.org/wiki/Snake_case).
      *
      * @static
      * @memberOf _
@@ -19730,7 +19730,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Splits `string` by `separator`.
      *
      * **Note:** This method is based on
-     * [`String#split`](http://mdn.io/String/split).
+     * [`String#split`](https://mdn.io/String/split).
      *
      * @static
      * @memberOf _
@@ -19768,7 +19768,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Converts `string` to
-     * [start case](http://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
+     * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
      *
      * @static
      * @memberOf _
@@ -19832,14 +19832,14 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * object is given, it takes precedence over `_.templateSettings` values.
      *
      * **Note:** In the development build `_.template` utilizes
-     * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+     * [sourceURLs](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
      * for easier debugging.
      *
      * For more information on precompiling templates see
-     * [lodash's custom builds documentation](http://lodash.com/custom-builds).
+     * [lodash's custom builds documentation](https://lodash.com/custom-builds).
      *
      * For more information on Chrome extension sandboxes see
-     * [Chrome's extensions documentation](http://developer.chrome.com/extensions/sandboxingEval).
+     * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
      *
      * @static
      * @since 0.1.0
@@ -19930,8 +19930,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      */
     function template(string, options, guard) {
       // Based on John Resig's `tmpl` implementation
-      // (http://ejohn.org/blog/javascript-micro-templating/)
-      // and Laura Doktorova's doT.js (http://github.com/olado/doT).
+      // (https://ejohn.org/blog/javascript-micro-templating/)
+      // and Laura Doktorova's doT.js (https://github.com/olado/doT).
       var settings = lodash.templateSettings;
 
       if (guard && isIterateeCall(string, options, guard)) {
@@ -20047,7 +20047,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Converts `string`, as a whole, to lower case just like
-     * [String#toLowerCase](http://mdn.io/toLowerCase).
+     * [String#toLowerCase](https://mdn.io/toLowerCase).
      *
      * @static
      * @memberOf _
@@ -20072,7 +20072,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
      * Converts `string`, as a whole, to upper case just like
-     * [String#toUpperCase](http://mdn.io/toUpperCase).
+     * [String#toUpperCase](https://mdn.io/toUpperCase).
      *
      * @static
      * @memberOf _
@@ -20298,7 +20298,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * their corresponding characters.
      *
      * **Note:** No other HTML entities are unescaped. To unescape additional
-     * HTML entities use a third-party library like [_he_](http://mths.be/he).
+     * HTML entities use a third-party library like [_he_](https://mths.be/he).
      *
      * @static
      * @memberOf _
@@ -22278,7 +22278,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   if (true) {
     // Expose Lodash on the global object to prevent errors when Lodash is
     // loaded by a script tag in the presence of an AMD loader.
-    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+    // See https://requirejs.org/docs/errors.html#mismatch for more details.
     // Use `_.noConflict` to remove Lodash from the global object.
     root._ = _;
 
@@ -22522,8 +22522,8 @@ process.umask = function() { return 0; };
    * This module contains `WeakMap`s for each effectively-"private  property" that a `Swal` has.
    * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
    * This is the approach that Babel will probably take to implement private methods/fields
-   *   http://github.com/tc39/proposal-private-methods
-   *   http://github.com/babel/babel/pull/7555
+   *   https://github.com/tc39/proposal-private-methods
+   *   https://github.com/babel/babel/pull/7555
    * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
    *   then we can use that language feature.
    */
@@ -22756,7 +22756,7 @@ process.umask = function() { return 0; };
    */
   const getCloseButton = () => elementByClass(swalClasses.close);
 
-  // http://github.com/jkup/focusable/blob/master/index.js
+  // https://github.com/jkup/focusable/blob/master/index.js
   const focusable = "\n  a[href],\n  area[href],\n  input:not([disabled]),\n  select:not([disabled]),\n  textarea:not([disabled]),\n  button:not([disabled]),\n  iframe,\n  object,\n  embed,\n  [tabindex=\"0\"],\n  [contenteditable],\n  audio[controls],\n  video[controls],\n  summary\n";
   /**
    * @returns {HTMLElement[]}
@@ -22806,7 +22806,7 @@ process.umask = function() { return 0; };
 
   /**
    * Securely set innerHTML of an element
-   * http://github.com/sweetalert2/sweetalert2/issues/1926
+   * https://github.com/sweetalert2/sweetalert2/issues/1926
    *
    * @param {HTMLElement} elem
    * @param {string} html
@@ -22821,7 +22821,7 @@ process.umask = function() { return 0; };
       });
       Array.from(parsed.querySelector('body').childNodes).forEach(child => {
         if (child instanceof HTMLVideoElement || child instanceof HTMLAudioElement) {
-          elem.appendChild(child.cloneNode(true)); // http://github.com/sweetalert2/sweetalert2/issues/2507
+          elem.appendChild(child.cloneNode(true)); // https://github.com/sweetalert2/sweetalert2/issues/2507
         } else {
           elem.appendChild(child);
         }
@@ -22908,7 +22908,7 @@ process.umask = function() { return 0; };
 
     // place cursor at end of text in text input
     if (input.type !== 'file') {
-      // http://stackoverflow.com/a/2345915
+      // https://stackoverflow.com/a/2345915
       const val = input.value;
       input.value = '';
       input.value = val;
@@ -23047,7 +23047,7 @@ process.umask = function() { return 0; };
   const isScrollable = elem => !!(elem.scrollHeight > elem.clientHeight);
 
   /**
-   * borrowed from http://stackoverflow.com/a/46352119
+   * borrowed from https://stackoverflow.com/a/46352119
    *
    * @param {HTMLElement} elem
    * @returns {boolean}
@@ -23306,7 +23306,7 @@ process.umask = function() { return 0; };
 
   /**
    * Measure scrollbar width for padding body during modal show/hide
-   * http://github.com/twbs/bootstrap/blob/master/js/src/modal.js
+   * https://github.com/twbs/bootstrap/blob/master/js/src/modal.js
    *
    * @returns {number}
    */
@@ -23725,9 +23725,9 @@ process.umask = function() { return 0; };
      */
     const getMargin = el => parseInt(window.getComputedStyle(el).marginLeft) + parseInt(window.getComputedStyle(el).marginRight);
 
-    // http://github.com/sweetalert2/sweetalert2/issues/2291
+    // https://github.com/sweetalert2/sweetalert2/issues/2291
     setTimeout(() => {
-      // http://github.com/sweetalert2/sweetalert2/issues/1699
+      // https://github.com/sweetalert2/sweetalert2/issues/1699
       if ('MutationObserver' in window) {
         const initialPopupWidth = parseInt(window.getComputedStyle(getPopup()).width);
         const textareaResizeHandler = () => {
@@ -23941,7 +23941,7 @@ process.umask = function() { return 0; };
     const popup = getPopup();
 
     // Width
-    // http://github.com/sweetalert2/sweetalert2/issues/2170
+    // https://github.com/sweetalert2/sweetalert2/issues/2170
     if (params.toast) {
       applyNumericalStyle(container, 'width', params.width);
       popup.style.width = '100%';
@@ -24231,9 +24231,9 @@ process.umask = function() { return 0; };
     }
 
     // Ignore keydown during IME composition
-    // http://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event#ignoring_keydown_during_ime_composition
-    // http://github.com/sweetalert2/sweetalert2/issues/720
-    // http://github.com/sweetalert2/sweetalert2/issues/2406
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event#ignoring_keydown_during_ime_composition
+    // https://github.com/sweetalert2/sweetalert2/issues/720
+    // https://github.com/sweetalert2/sweetalert2/issues/2406
     if (e.isComposing || e.keyCode === 229) {
       return;
     }
@@ -24268,7 +24268,7 @@ process.umask = function() { return 0; };
    * @param {SweetAlertOptions} innerParams
    */
   const handleEnter = (instance, e, innerParams) => {
-    // http://github.com/sweetalert2/sweetalert2/issues/2386
+    // https://github.com/sweetalert2/sweetalert2/issues/2386
     if (!callIfFunction(innerParams.allowEnterKey)) {
       return;
     }
@@ -24352,8 +24352,8 @@ process.umask = function() { return 0; };
    * This module contains `WeakMap`s for each effectively-"private  property" that a `Swal` has.
    * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
    * This is the approach that Babel will probably take to implement private methods/fields
-   *   http://github.com/tc39/proposal-private-methods
-   *   http://github.com/babel/babel/pull/7555
+   *   https://github.com/tc39/proposal-private-methods
+   *   https://github.com/babel/babel/pull/7555
    * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
    *   then we can use that language feature.
    */
@@ -24363,7 +24363,7 @@ process.umask = function() { return 0; };
     swalPromiseReject: new WeakMap()
   };
 
-  // From http://developer.paciellogroup.com/blog/2018/06/the-current-state-of-modal-dialog-accessibility/
+  // From https://developer.paciellogroup.com/blog/2018/06/the-current-state-of-modal-dialog-accessibility/
   // Adding aria-hidden="true" to elements outside of the active modal dialog ensures that
   // elements not within the active modal dialog will not be surfaced if a user opens a screen
   // reader’s list of elements (headings, form controls, landmarks, etc.) in the document.
@@ -24394,7 +24394,7 @@ process.umask = function() { return 0; };
 
   /* istanbul ignore file */
 
-  // Fix iOS scrolling http://stackoverflow.com/q/39626302
+  // Fix iOS scrolling https://stackoverflow.com/q/39626302
 
   const iOSfix = () => {
     const iOS =
@@ -24410,7 +24410,7 @@ process.umask = function() { return 0; };
   };
 
   /**
-   * http://github.com/sweetalert2/sweetalert2/issues/1948
+   * https://github.com/sweetalert2/sweetalert2/issues/1948
    */
   const addBottomPaddingForTallPopups = () => {
     const ua = navigator.userAgent;
@@ -24426,7 +24426,7 @@ process.umask = function() { return 0; };
   };
 
   /**
-   * http://github.com/sweetalert2/sweetalert2/issues/1246
+   * https://github.com/sweetalert2/sweetalert2/issues/1246
    */
   const lockBodyScroll = () => {
     const container = getContainer();
@@ -24474,7 +24474,7 @@ process.umask = function() { return 0; };
   };
 
   /**
-   * http://github.com/sweetalert2/sweetalert2/issues/1786
+   * https://github.com/sweetalert2/sweetalert2/issues/1786
    *
    * @param {*} event
    * @returns {boolean}
@@ -24484,7 +24484,7 @@ process.umask = function() { return 0; };
   };
 
   /**
-   * http://github.com/sweetalert2/sweetalert2/issues/1891
+   * https://github.com/sweetalert2/sweetalert2/issues/1891
    *
    * @param {TouchEvent} event
    * @returns {boolean}
@@ -25178,7 +25178,7 @@ process.umask = function() { return 0; };
         const optionValue = inputOption[0];
         const optionLabel = inputOption[1];
         // <optgroup> spec:
-        // http://www.w3.org/TR/html401/interact/forms.html#h-17.6
+        // https://www.w3.org/TR/html401/interact/forms.html#h-17.6
         // "...all OPTGROUP elements must be specified directly within a SELECT element (i.e., groups may not be nested)..."
         // check whether this is a <optgroup>
         if (Array.isArray(optionLabel)) {
@@ -26033,7 +26033,7 @@ process.umask = function() { return 0; };
    */
   const addClasses$1 = (container, popup, params) => {
     addClass(container, params.showClass.backdrop);
-    // this workaround with opacity is needed for http://github.com/sweetalert2/sweetalert2/issues/2059
+    // this workaround with opacity is needed for https://github.com/sweetalert2/sweetalert2/issues/2059
     popup.style.setProperty('opacity', '0', 'important');
     show(popup, 'grid');
     setTimeout(() => {
@@ -26064,7 +26064,7 @@ process.umask = function() { return 0; };
      * @returns {Promise<void | string>}
      */
     url: (string, validationMessage) => {
-      // taken from http://stackoverflow.com/a/3809435 with a small change from #1306 and #2013
+      // taken from https://stackoverflow.com/a/3809435 with a small change from #1306 and #2013
       return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid URL');
     }
   };
@@ -26104,7 +26104,7 @@ process.umask = function() { return 0; };
 
     // showLoaderOnConfirm && preConfirm
     if (params.showLoaderOnConfirm && !params.preConfirm) {
-      warn('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'http://sweetalert2.github.io/#ajax-request');
+      warn('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'https://sweetalert2.github.io/#ajax-request');
     }
     validateCustomTargetElement(params);
 
@@ -26379,7 +26379,7 @@ if (typeof this !== 'undefined' && this.Sweetalert2){  this.swal = this.sweetAle
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"http://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"http://github.com/axios/axios/issues"},"homepage":"http://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
+module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 

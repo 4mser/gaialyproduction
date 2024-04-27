@@ -9,16 +9,16 @@ document.addEventListener("livewire:load", function () {
 
     // Layers
     let osmLayer = L.tileLayer(
-        "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
         {
             maxZoom: 21,
             attribution:
-                '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }
     );
     osmLayer.addTo(map);
     let googleLayer = L.tileLayer(
-        "http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}",
+        "https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}",
         {
             attribution: "google",
         }

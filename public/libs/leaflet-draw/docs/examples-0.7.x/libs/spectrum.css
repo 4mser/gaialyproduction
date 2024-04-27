@@ -1,6 +1,6 @@
 /***
 Spectrum Colorpicker v1.3.4
-http://github.com/bgrins/spectrum
+https://github.com/bgrins/spectrum
 Author: Brian Grinstead
 License: MIT
 ***/
@@ -12,7 +12,7 @@ License: MIT
     display:inline-block;
     *display: inline;
     *zoom: 1;
-    /* http://github.com/bgrins/spectrum/issues/40 */
+    /* https://github.com/bgrins/spectrum/issues/40 */
     z-index: 9999994;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@ License: MIT
             box-sizing: content-box;
 }
 
-/* http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+/* https://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
 .sp-top {
   position:relative;
   width: 100%;
@@ -246,7 +246,7 @@ License: MIT
 /*
 Theme authors:
 Here are the basic themeable display options (colors, fonts, global widths).
-See http://bgrins.github.io/spectrum/themes/ for instructions.
+See https://bgrins.github.io/spectrum/themes/ for instructions.
 */
 
 .sp-container {
@@ -421,7 +421,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 }
 
 
-/* Buttons: http://hellohappy.org/css3-buttons/ */
+/* Buttons: https://hellohappy.org/css3-buttons/ */
 .sp-container button {
   background-color: #eeeeee;
   background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);

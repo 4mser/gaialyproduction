@@ -11,9 +11,9 @@
 
     <!-- Fonts -->
     <link rel="stylesheet"
-          href="http://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     <link rel="stylesheet"
-          href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossorigin="anonymous" />
     <!-- Styles -->
@@ -54,7 +54,7 @@
             <!-- mobile menu button -->
             <button class="mobile-menu-button focus:bg-grey-900 p-4 focus:outline-none">
                 <svg class="h-5 w-5"
-                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns="https://www.w3.org/2000/svg"
                      fill="none"
                      viewBox="0 0 24 24"
                      stroke="currentColor">

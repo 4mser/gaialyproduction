@@ -69,7 +69,7 @@ trait HasProfilePhoto
      */
     protected function defaultProfilePhotoUrl()
     {
-        return 'http://ui-avatars.com/api/?name=' . urlencode($this->name . " " . $this->last_name) . '&color=FFFFFF&background=37B0C0';
+        return 'https://ui-avatars.com/api/?name=' . urlencode($this->name . " " . $this->last_name) . '&color=FFFFFF&background=37B0C0';
     }
 
     /**

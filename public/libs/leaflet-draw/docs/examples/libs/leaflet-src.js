@@ -1,5 +1,5 @@
 /* @preserve
- * Leaflet 1.3.1, a JS library for interactive maps. http://leafletjs.com
+ * Leaflet 1.3.1, a JS library for interactive maps. https://leafletjs.com
  * (c) 2010-2017 Vladimir Agafonkin, (c) 2010-2011 CloudMade
  */
 
@@ -35,7 +35,7 @@ function extend(dest) {
 }
 
 // @function create(proto: Object, properties?: Object): Object
-// Compatibility polyfill for [Object.create](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+// Compatibility polyfill for [Object.create](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 var create = Object.create || (function () {
 	function F() {}
 	return function (proto) {
@@ -45,7 +45,7 @@ var create = Object.create || (function () {
 })();
 
 // @function bind(fn: Function, …): Function
-// Returns a new function bound to the arguments passed, like [Function.prototype.bind](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+// Returns a new function bound to the arguments passed, like [Function.prototype.bind](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
 // Has a `L.bind()` shortcut.
 function bind(fn, obj) {
 	var slice = Array.prototype.slice;
@@ -132,7 +132,7 @@ function formatNum(num, digits) {
 }
 
 // @function trim(str: String): String
-// Compatibility polyfill for [String.prototype.trim](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+// Compatibility polyfill for [String.prototype.trim](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 function trim(str) {
 	return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
 }
@@ -190,13 +190,13 @@ function template(str, data) {
 }
 
 // @function isArray(obj): Boolean
-// Compatibility polyfill for [Array.isArray](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+// Compatibility polyfill for [Array.isArray](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 var isArray = Array.isArray || function (obj) {
 	return (Object.prototype.toString.call(obj) === '[object Array]');
 };
 
 // @function indexOf(array: Array, el: Object): Number
-// Compatibility polyfill for [Array.prototype.indexOf](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+// Compatibility polyfill for [Array.prototype.indexOf](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 function indexOf(array, el) {
 	for (var i = 0; i < array.length; i++) {
 		if (array[i] === el) { return i; }
@@ -210,7 +210,7 @@ function indexOf(array, el) {
 // mobile devices (by setting image `src` to this string).
 var emptyImageUrl = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
-// inspired by http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+// inspired by https://paulirish.com/2011/requestanimationframe-for-smart-animating/
 
 function getPrefixed(name) {
 	return window['webkit' + name] || window['moz' + name] || window['ms' + name];
@@ -235,7 +235,7 @@ var cancelFn = window.cancelAnimationFrame || getPrefixed('CancelAnimationFrame'
 // Schedules `fn` to be executed when the browser repaints. `fn` is bound to
 // `context` if given. When `immediate` is set, `fn` is called immediately if
 // the browser doesn't have native support for
-// [`window.requestAnimationFrame`](http://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame),
+// [`window.requestAnimationFrame`](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame),
 // otherwise it's delayed. Returns a request ID that can be used to cancel the request.
 function requestAnimFrame(fn, context, immediate) {
 	if (immediate && requestFn === timeoutDefer) {
@@ -246,7 +246,7 @@ function requestAnimFrame(fn, context, immediate) {
 }
 
 // @function cancelAnimFrame(id: Number): undefined
-// Cancels a previous `requestAnimFrame`. See also [window.cancelAnimationFrame](http://developer.mozilla.org/docs/Web/API/window/cancelAnimationFrame).
+// Cancels a previous `requestAnimFrame`. See also [window.cancelAnimationFrame](https://developer.mozilla.org/docs/Web/API/window/cancelAnimationFrame).
 function cancelAnimFrame(id) {
 	if (id) {
 		cancelFn.call(window, id);
@@ -793,7 +793,7 @@ Point.prototype = {
 	// @method scaleBy(scale: Point): Point
 	// Multiply each coordinate of the current point by each coordinate of
 	// `scale`. In linear algebra terms, multiply the point by the
-	// [scaling matrix](http://en.wikipedia.org/wiki/Scaling_%28geometry%29#Matrix_representation)
+	// [scaling matrix](https://en.wikipedia.org/wiki/Scaling_%28geometry%29#Matrix_representation)
 	// defined by `scale`.
 	scaleBy: function (point) {
 		return new Point(this.x * point.x, this.y * point.y);
@@ -1409,7 +1409,7 @@ LatLng.prototype = {
 	},
 
 	// @method distanceTo(otherLatLng: LatLng): Number
-	// Returns the distance (in meters) to the given `LatLng` calculated using the [Spherical Law of Cosines](http://en.wikipedia.org/wiki/Spherical_law_of_cosines).
+	// Returns the distance (in meters) to the given `LatLng` calculated using the [Spherical Law of Cosines](https://en.wikipedia.org/wiki/Spherical_law_of_cosines).
 	distanceTo: function (other) {
 		return Earth.distance(this, toLatLng(other));
 	},
@@ -1479,12 +1479,12 @@ function toLatLng(a, b, c) {
  * @crs L.CRS.Base
  * Object that defines coordinate reference systems for projecting
  * geographical points into pixel (screen) coordinates and back (and to
- * coordinates in other units for [WMS](http://en.wikipedia.org/wiki/Web_Map_Service) services). See
- * [spatial reference system](http://en.wikipedia.org/wiki/Coordinate_reference_system).
+ * coordinates in other units for [WMS](https://en.wikipedia.org/wiki/Web_Map_Service) services). See
+ * [spatial reference system](https://en.wikipedia.org/wiki/Coordinate_reference_system).
  *
  * Leaflet defines the most usual CRSs by default. If you want to use a
  * CRS not defined by default, take a look at the
- * [Proj4Leaflet](http://github.com/kartena/Proj4Leaflet) plugin.
+ * [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin.
  *
  * Note that the CRS instances do not inherit from Leafet's `Class` object,
  * and can't be instantiated. Also, new classes can't inherit from them,
@@ -1623,7 +1623,7 @@ var Earth = extend({}, CRS, {
 
 	// Mean Earth Radius, as recommended for use by
 	// the International Union of Geodesy and Geophysics,
-	// see http://rosettacode.org/wiki/Haversine_formula
+	// see https://rosettacode.org/wiki/Haversine_formula
 	R: 6371000,
 
 	// distance between two geographical points using spherical law of cosines approximation
@@ -1782,11 +1782,11 @@ var EPSG900913 = extend({}, EPSG3857, {
 // There are several static functions which can be called without instantiating L.SVG:
 
 // @function create(name: String): SVGElement
-// Returns a instance of [SVGElement](http://developer.mozilla.org/docs/Web/API/SVGElement),
+// Returns a instance of [SVGElement](https://developer.mozilla.org/docs/Web/API/SVGElement),
 // corresponding to the class name passed. For example, using 'line' will return
-// an instance of [SVGLineElement](http://developer.mozilla.org/docs/Web/API/SVGLineElement).
+// an instance of [SVGLineElement](https://developer.mozilla.org/docs/Web/API/SVGLineElement).
 function svgCreate(name) {
-	return document.createElementNS('http://www.w3.org/2000/svg', name);
+	return document.createElementNS('https://www.w3.org/2000/svg', name);
 }
 
 // @function pointsToPath(rings: Point[], closed: Boolean): String
@@ -1849,7 +1849,7 @@ var android = userAgentContains('android');
 // @property android23: Boolean; `true` for browsers running on Android 2 or Android 3.
 var android23 = userAgentContains('android 2') || userAgentContains('android 3');
 
-/* See http://stackoverflow.com/a/17961266 for details on detecting stock Android */
+/* See https://stackoverflow.com/a/17961266 for details on detecting stock Android */
 var webkitVer = parseInt(/WebKit\/([0-9]+)|$/.exec(navigator.userAgent)[1], 10); // also matches AppleWebKit
 // @property androidStock: Boolean; `true` for the Android stock browser (i.e. not Chrome)
 var androidStock = android && userAgentContains('Google') && webkitVer < 537 && !('AudioNode' in window);
@@ -1903,11 +1903,11 @@ var mobileWebkit3d = mobile && webkit3d;
 var msPointer = !window.PointerEvent && window.MSPointerEvent;
 
 // @property pointer: Boolean
-// `true` for all browsers supporting [pointer events](http://msdn.microsoft.com/en-us/library/dn433244%28v=vs.85%29.aspx).
+// `true` for all browsers supporting [pointer events](https://msdn.microsoft.com/en-us/library/dn433244%28v=vs.85%29.aspx).
 var pointer = !!(window.PointerEvent || msPointer);
 
 // @property touch: Boolean
-// `true` for all browsers supporting [touch events](http://developer.mozilla.org/docs/Web/API/Touch_events).
+// `true` for all browsers supporting [touch events](https://developer.mozilla.org/docs/Web/API/Touch_events).
 // This does not necessarily mean that the browser is running in a computer with
 // a touchscreen, it only means that the browser is capable of understanding
 // touch events.
@@ -1927,17 +1927,17 @@ var retina = (window.devicePixelRatio || (window.screen.deviceXDPI / window.scre
 
 
 // @property canvas: Boolean
-// `true` when the browser supports [`<canvas>`](http://developer.mozilla.org/docs/Web/API/Canvas_API).
+// `true` when the browser supports [`<canvas>`](https://developer.mozilla.org/docs/Web/API/Canvas_API).
 var canvas = (function () {
 	return !!document.createElement('canvas').getContext;
 }());
 
 // @property svg: Boolean
-// `true` when the browser supports [SVG](http://developer.mozilla.org/docs/Web/SVG).
+// `true` when the browser supports [SVG](https://developer.mozilla.org/docs/Web/SVG).
 var svg = !!(document.createElementNS && svgCreate('svg').createSVGRect);
 
 // @property vml: Boolean
-// `true` if the browser supports [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language).
+// `true` if the browser supports [VML](https://en.wikipedia.org/wiki/Vector_Markup_Language).
 var vml = !svg && (function () {
 	try {
 		var div = document.createElement('div');
@@ -2010,7 +2010,7 @@ var _pointerDocListener = false;
 var _pointersCount = 0;
 
 // Provides a touch events wrapper for (ms)pointer events.
-// ref http://www.w3.org/TR/pointerevents/ http://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
+// ref https://www.w3.org/TR/pointerevents/ https://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
 
 function addPointerListener(obj, type, handler, id) {
 	if (type === 'touchstart') {
@@ -2208,7 +2208,7 @@ function removeDoubleTapListener(obj, id) {
 
 /*
  * @namespace DomEvent
- * Utility functions to work with the [DOM events](http://developer.mozilla.org/docs/Web/API/Event), used by Leaflet internally.
+ * Utility functions to work with the [DOM events](https://developer.mozilla.org/docs/Web/API/Event), used by Leaflet internally.
  */
 
 // Inspired by John Resig, Dean Edwards and YUI addEvent implementations.
@@ -2529,7 +2529,7 @@ var DomEvent = (Object.freeze || Object)({
 /*
  * @namespace DomUtil
  *
- * Utility functions to work with the [DOM](http://developer.mozilla.org/docs/Web/API/Document_Object_Model)
+ * Utility functions to work with the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model)
  * tree, used by Leaflet internally.
  *
  * Most functions expecting or returning a `HTMLElement` also work for
@@ -2818,7 +2818,7 @@ function enableImageDrag() {
 var _outlineElement;
 var _outlineStyle;
 // @function preventOutline(el: HTMLElement)
-// Makes the [outline](http://developer.mozilla.org/docs/Web/CSS/outline)
+// Makes the [outline](https://developer.mozilla.org/docs/Web/CSS/outline)
 // of the element `el` invisible. Used internally by Leaflet to prevent
 // focusable elements from displaying an outline when the user performs a
 // drag interaction on them.
@@ -2896,7 +2896,7 @@ var PosAnimation = Evented.extend({
 	// @method run(el: HTMLElement, newPos: Point, duration?: Number, easeLinearity?: Number)
 	// Run an animation of a given element to a new position, optionally setting
 	// duration in seconds (`0.25` by default) and easing linearity factor (3rd
-	// argument of the [cubic bezier curve](http://cubic-bezier.com/#0,0,.5,1),
+	// argument of the [cubic bezier curve](https://cubic-bezier.com/#0,0,.5,1),
 	// `0.5` by default).
 	run: function (el, newPos, duration, easeLinearity) {
 		this.stop();
@@ -3089,7 +3089,7 @@ var Map = Evented.extend({
 		this._initContainer(id);
 		this._initLayout();
 
-		// hack for http://github.com/Leaflet/Leaflet/issues/1980
+		// hack for https://github.com/Leaflet/Leaflet/issues/1980
 		this._onResize = bind(this._onResize, this);
 
 		this._initEvents();
@@ -3546,7 +3546,7 @@ var Map = Evented.extend({
 	// and optionally sets the map view to the user's location with respect to
 	// detection accuracy (or to the world view if geolocation failed).
 	// Note that, if your page doesn't use HTTPS, this method will fail in
-	// modern browsers ([Chrome 50 and newer](http://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-powerful-features-on-insecure-origins))
+	// modern browsers ([Chrome 50 and newer](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-powerful-features-on-insecure-origins))
 	// See `Locate options` for more details.
 	locate: function (options) {
 
@@ -4252,8 +4252,8 @@ var Map = Evented.extend({
 	_onMoveEnd: function () {
 		var pos = this._getMapPanePos();
 		if (Math.max(Math.abs(pos.x), Math.abs(pos.y)) >= this.options.transform3DLimit) {
-			// http://bugzilla.mozilla.org/show_bug.cgi?id=1203873 but Webkit also have
-			// a pixel offset on very high values, see: http://jsfiddle.net/dg6r5hhb/
+			// https://bugzilla.mozilla.org/show_bug.cgi?id=1203873 but Webkit also have
+			// a pixel offset on very high values, see: https://jsfiddle.net/dg6r5hhb/
 			this._resetView(this.getCenter(), this.getZoom());
 		}
 	},
@@ -4590,7 +4590,7 @@ var Map = Evented.extend({
 			noUpdate: noUpdate
 		});
 
-		// Work around webkit not firing 'transitionend', see http://github.com/Leaflet/Leaflet/issues/3689, 2693
+		// Work around webkit not firing 'transitionend', see https://github.com/Leaflet/Leaflet/issues/3689, 2693
 		setTimeout(bind(this._onZoomTransitionEnd, this), 250);
 	},
 
@@ -4797,7 +4797,7 @@ Map.include({
  * @aka L.Control.Layers
  * @inherits Control
  *
- * The layers control gives users the ability to switch between different base layers and switch overlays on/off (check out the [detailed example](http://leafletjs.com/examples/layers-control/)). Extends `Control`.
+ * The layers control gives users the ability to switch between different base layers and switch overlays on/off (check out the [detailed example](https://leafletjs.com/examples/layers-control/)). Extends `Control`.
  *
  * @example
  *
@@ -4854,7 +4854,7 @@ var Layers = Control.extend({
 		sortLayers: false,
 
 		// @option sortFunction: Function = *
-		// A [compare function](http://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+		// A [compare function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 		// that will be used for sorting the layers, when `sortLayers` is `true`.
 		// The function receives both the `L.Layer` instances and their names, as in
 		// `sortFunction(layerA, layerB, nameA, nameB)`.
@@ -5091,7 +5091,7 @@ var Layers = Control.extend({
 		}
 	},
 
-	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see https://bit.ly/PqYLBe)
 	_createRadioElement: function (name, checked) {
 
 		var radioHtml = '<input type="radio" class="leaflet-control-layers-selector" name="' +
@@ -5126,7 +5126,7 @@ var Layers = Control.extend({
 		name.innerHTML = ' ' + obj.name;
 
 		// Helps from preventing layer control flicker when checkboxes are disabled
-		// http://github.com/Leaflet/Leaflet/issues/2771
+		// https://github.com/Leaflet/Leaflet/issues/2771
 		var holder = document.createElement('div');
 
 		label.appendChild(holder);
@@ -5495,7 +5495,7 @@ var Attribution = Control.extend({
 
 		// @option prefix: String = 'Leaflet'
 		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+		prefix: '<a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
 	},
 
 	initialize: function (options) {
@@ -5903,11 +5903,11 @@ var Draggable = Evented.extend({
 // @function simplify(points: Point[], tolerance: Number): Point[]
 // Dramatically reduces the number of points in a polyline while retaining
 // its shape and returns a new array of simplified points, using the
-// [Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm).
+// [Douglas-Peucker algorithm](https://en.wikipedia.org/wiki/Douglas-Peucker_algorithm).
 // Used for a huge performance boost when processing/displaying Leaflet polylines for
 // each zoom level and also reducing visual noise. tolerance affects the amount of
 // simplification (lesser value means higher quality but slower and with more points).
-// Also released as a separated micro-library [Simplify.js](http://mourner.github.com/simplify-js/).
+// Also released as a separated micro-library [Simplify.js](https://mourner.github.com/simplify-js/).
 function simplify(points, tolerance) {
 	if (!tolerance || !points.length) {
 		return points.slice();
@@ -5936,7 +5936,7 @@ function closestPointOnSegment(p, p1, p2) {
 	return _sqClosestPointOnSegment(p, p1, p2);
 }
 
-// Douglas-Peucker simplification, see http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
+// Douglas-Peucker simplification, see https://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
 function _simplifyDP(points, sqTolerance) {
 
 	var len = points.length,
@@ -6001,7 +6001,7 @@ var _lastCode;
 
 // @function clipSegment(a: Point, b: Point, bounds: Bounds, useLastCode?: Boolean, round?: Boolean): Point[]|Boolean
 // Clips the segment a to b by rectangular bounds with the
-// [Cohen-Sutherland algorithm](http://en.wikipedia.org/wiki/Cohen%E2%80%93Sutherland_algorithm)
+// [Cohen-Sutherland algorithm](https://en.wikipedia.org/wiki/Cohen%E2%80%93Sutherland_algorithm)
 // (modifying the segment points directly!). Used by Leaflet to only show polyline
 // points that are on the screen or near, increasing performance.
 function clipSegment(a, b, bounds, useLastCode, round) {
@@ -6149,7 +6149,7 @@ var LineUtil = (Object.freeze || Object)({
  */
 
 /* @function clipPolygon(points: Point[], bounds: Bounds, round?: Boolean): Point[]
- * Clips the polygon geometry defined by the given `points` by the given bounds (using the [Sutherland-Hodgman algorithm](http://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm)).
+ * Clips the polygon geometry defined by the given `points` by the given bounds (using the [Sutherland-Hodgman algorithm](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm)).
  * Used by Leaflet to only show polygon points that are on the screen or near, increasing
  * performance. Note that polygon points needs different algorithm for clipping
  * than polyline, so there's a separate method for it.
@@ -6277,7 +6277,7 @@ var Mercator = {
  * @class Projection
 
  * An object with methods for projecting geographical coordinates of the world onto
- * a flat surface (and back). See [Map projection](http://en.wikipedia.org/wiki/Map_projection).
+ * a flat surface (and back). See [Map projection](https://en.wikipedia.org/wiki/Map_projection).
 
  * @property bounds: Bounds
  * The bounds (specified in CRS units) where the projection is valid
@@ -6327,7 +6327,7 @@ var EPSG3395 = extend({}, Earth, {
  *
  * A common CRS among GIS enthusiasts. Uses simple Equirectangular projection.
  *
- * Leaflet 1.0.x complies with the [TMS coordinate scheme for EPSG:4326](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-geodetic),
+ * Leaflet 1.0.x complies with the [TMS coordinate scheme for EPSG:4326](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-geodetic),
  * which is a breaking change from 0.7.x behaviour.  If you are using a `TileLayer`
  * with this CRS, ensure that there are two 256x256 pixel tiles covering the
  * whole earth at zoom level zero, and that the tile coordinate origin is (-180,+90),
@@ -7655,19 +7655,19 @@ var Path = Layer.extend({
 		opacity: 1,
 
 		// @option lineCap: String= 'round'
-		// A string that defines [shape to be used at the end](http://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linecap) of the stroke.
+		// A string that defines [shape to be used at the end](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linecap) of the stroke.
 		lineCap: 'round',
 
 		// @option lineJoin: String = 'round'
-		// A string that defines [shape to be used at the corners](http://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linejoin) of the stroke.
+		// A string that defines [shape to be used at the corners](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linejoin) of the stroke.
 		lineJoin: 'round',
 
 		// @option dashArray: String = null
-		// A string that defines the stroke [dash pattern](http://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-dasharray). Doesn't work on `Canvas`-powered layers in [some old browsers](http://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setLineDash#Browser_compatibility).
+		// A string that defines the stroke [dash pattern](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-dasharray). Doesn't work on `Canvas`-powered layers in [some old browsers](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setLineDash#Browser_compatibility).
 		dashArray: null,
 
 		// @option dashOffset: String = null
-		// A string that defines the [distance into the dash pattern to start the dash](http://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-dashoffset). Doesn't work on `Canvas`-powered layers in [some old browsers](http://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setLineDash#Browser_compatibility).
+		// A string that defines the [distance into the dash pattern to start the dash](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-dashoffset). Doesn't work on `Canvas`-powered layers in [some old browsers](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setLineDash#Browser_compatibility).
 		dashOffset: null,
 
 		// @option fill: Boolean = depends
@@ -7683,7 +7683,7 @@ var Path = Layer.extend({
 		fillOpacity: 0.2,
 
 		// @option fillRule: String = 'evenodd'
-		// A string that defines [how the inside of a shape](http://developer.mozilla.org/docs/Web/SVG/Attribute/fill-rule) is determined.
+		// A string that defines [how the inside of a shape](https://developer.mozilla.org/docs/Web/SVG/Attribute/fill-rule) is determined.
 		fillRule: 'evenodd',
 
 		// className: '',
@@ -8080,7 +8080,7 @@ var Polyline = Path.extend({
 	},
 
 	// @method getCenter(): LatLng
-	// Returns the center ([centroid](http://en.wikipedia.org/wiki/Centroid)) of the polyline.
+	// Returns the center ([centroid](https://en.wikipedia.org/wiki/Centroid)) of the polyline.
 	getCenter: function () {
 		// throws error when not yet added to map as this center calculation requires projected coordinates
 		if (!this._map) {
@@ -8760,19 +8760,19 @@ var PointToGeoJSON = {
 
 // @namespace Marker
 // @method toGeoJSON(): Object
-// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the marker (as a GeoJSON `Point` Feature).
+// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the marker (as a GeoJSON `Point` Feature).
 Marker.include(PointToGeoJSON);
 
 // @namespace CircleMarker
 // @method toGeoJSON(): Object
-// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the circle marker (as a GeoJSON `Point` Feature).
+// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the circle marker (as a GeoJSON `Point` Feature).
 Circle.include(PointToGeoJSON);
 CircleMarker.include(PointToGeoJSON);
 
 
 // @namespace Polyline
 // @method toGeoJSON(): Object
-// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the polyline (as a GeoJSON `LineString` or `MultiLineString` Feature).
+// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the polyline (as a GeoJSON `LineString` or `MultiLineString` Feature).
 Polyline.include({
 	toGeoJSON: function (precision) {
 		var multi = !isFlat(this._latlngs);
@@ -8788,7 +8788,7 @@ Polyline.include({
 
 // @namespace Polygon
 // @method toGeoJSON(): Object
-// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the polygon (as a GeoJSON `Polygon` or `MultiPolygon` Feature).
+// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the polygon (as a GeoJSON `Polygon` or `MultiPolygon` Feature).
 Polygon.include({
 	toGeoJSON: function (precision) {
 		var holes = !isFlat(this._latlngs),
@@ -8824,7 +8824,7 @@ LayerGroup.include({
 	},
 
 	// @method toGeoJSON(): Object
-	// Returns a [`GeoJSON`](http://en.wikipedia.org/wiki/GeoJSON) representation of the layer group (as a GeoJSON `FeatureCollection`, `GeometryCollection`, or `MultiPoint`).
+	// Returns a [`GeoJSON`](https://en.wikipedia.org/wiki/GeoJSON) representation of the layer group (as a GeoJSON `FeatureCollection`, `GeometryCollection`, or `MultiPoint`).
 	toGeoJSON: function (precision) {
 
 		var type = this.feature && this.feature.geometry && this.feature.geometry.type;
@@ -8870,7 +8870,7 @@ LayerGroup.include({
 // @namespace GeoJSON
 // @factory L.geoJSON(geojson?: Object, options?: GeoJSON options)
 // Creates a GeoJSON layer. Optionally accepts an object in
-// [GeoJSON format](http://geojson.org/geojson-spec.html) to display on the map
+// [GeoJSON format](https://geojson.org/geojson-spec.html) to display on the map
 // (you can alternatively add it later with `addData` method) and an `options` object.
 function geoJSON(geojson, options) {
 	return new GeoJSON(geojson, options);
@@ -8889,7 +8889,7 @@ var geoJson = geoJSON;
  * @example
  *
  * ```js
- * var imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+ * var imageUrl = 'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
  * 	imageBounds = [[40.712216, -74.22655], [40.773941, -74.12544]];
  * L.imageOverlay(imageUrl, imageBounds).addTo(map);
  * ```
@@ -8921,7 +8921,7 @@ var ImageOverlay = Layer.extend({
 		errorOverlayUrl: '',
 
 		// @option zIndex: Number = 1
-		// The explicit [zIndex](http://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index) of the tile layer.
+		// The explicit [zIndex](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index) of the tile layer.
 		zIndex: 1,
 
 		// @option className: String = ''
@@ -9047,7 +9047,7 @@ var ImageOverlay = Layer.extend({
 	},
 
 	// @method getElement(): HTMLElement
-	// Returns the instance of [`HTMLImageElement`](http://developer.mozilla.org/docs/Web/API/HTMLImageElement)
+	// Returns the instance of [`HTMLImageElement`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement)
 	// used by this overlay.
 	getElement: function () {
 		return this._image;
@@ -9143,13 +9143,13 @@ var imageOverlay = function (url, bounds, options) {
  *
  * Used to load and display a video player over specific bounds of the map. Extends `ImageOverlay`.
  *
- * A video overlay uses the [`<video>`](http://developer.mozilla.org/docs/Web/HTML/Element/video)
+ * A video overlay uses the [`<video>`](https://developer.mozilla.org/docs/Web/HTML/Element/video)
  * HTML5 element.
  *
  * @example
  *
  * ```js
- * var videoUrl = 'http://www.mapbox.com/bites/00188/patricia_nasa.webm',
+ * var videoUrl = 'https://www.mapbox.com/bites/00188/patricia_nasa.webm',
  * 	videoBounds = [[ 32, -130], [ 13, -100]];
  * L.VideoOverlay(videoUrl, videoBounds ).addTo(map);
  * ```
@@ -9206,7 +9206,7 @@ var VideoOverlay = ImageOverlay.extend({
 	}
 
 	// @method getElement(): HTMLVideoElement
-	// Returns the instance of [`HTMLVideoElement`](http://developer.mozilla.org/docs/Web/API/HTMLVideoElement)
+	// Returns the instance of [`HTMLVideoElement`](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement)
 	// used by this overlay.
 });
 
@@ -11180,7 +11180,7 @@ var GridLayer = Layer.extend({
 
 		// Cancels any pending http requests associated with the tile
 		// unless we're on Android's stock browser,
-		// see http://github.com/Leaflet/Leaflet/issues/137
+		// see https://github.com/Leaflet/Leaflet/issues/137
 		if (!androidStock) {
 			tile.el.setAttribute('src', emptyImageUrl);
 		}
@@ -11212,7 +11212,7 @@ var GridLayer = Layer.extend({
 		}
 
 		// without this hack, tiles disappear after zoom on Chrome for Android
-		// http://github.com/Leaflet/Leaflet/issues/2078
+		// https://github.com/Leaflet/Leaflet/issues/2078
 		if (android && !android23) {
 			tile.style.WebkitBackfaceVisibility = 'hidden';
 		}
@@ -11348,7 +11348,7 @@ function gridLayer(options) {
  * @example
  *
  * ```js
- * L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(map);
+ * L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(map);
  * ```
  *
  * @section URL template
@@ -11357,7 +11357,7 @@ function gridLayer(options) {
  * A string of the following form:
  *
  * ```
- * 'http://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
+ * 'https://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
  * ```
  *
  * `{s}` means one of the available subdomains (used sequentially to help with browser parallel requests per domain limitation; subdomain values are specified in options; `a`, `b` or `c` by default, can be omitted), `{z}` — zoom level, `{x}` and `{y}` — tile coordinates. `{r}` can be used to add "&commat;2x" to the URL to load retina tiles.
@@ -11365,7 +11365,7 @@ function gridLayer(options) {
  * You can use custom keys in the template, which will be [evaluated](#util-template) from TileLayer options, like this:
  *
  * ```
- * L.tileLayer('http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
+ * L.tileLayer('https://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
  * ```
  */
 
@@ -11396,7 +11396,7 @@ var TileLayer = GridLayer.extend({
 		zoomOffset: 0,
 
 		// @option tms: Boolean = false
-		// If `true`, inverses Y axis numbering for tiles (turn this on for [TMS](http://en.wikipedia.org/wiki/Tile_Map_Service) services).
+		// If `true`, inverses Y axis numbering for tiles (turn this on for [TMS](https://en.wikipedia.org/wiki/Tile_Map_Service) services).
 		tms: false,
 
 		// @option zoomReverse: Boolean = false
@@ -11438,7 +11438,7 @@ var TileLayer = GridLayer.extend({
 			options.subdomains = options.subdomains.split('');
 		}
 
-		// for http://github.com/Leaflet/Leaflet/issues/137
+		// for https://github.com/Leaflet/Leaflet/issues/137
 		if (!android) {
 			this.on('tileunload', this._onTileRemove);
 		}
@@ -11471,13 +11471,13 @@ var TileLayer = GridLayer.extend({
 
 		/*
 		 Alt tag is set to empty string to keep screen readers from reading URL and for compliance reasons
-		 http://www.w3.org/TR/WCAG20-TECHS/H67
+		 https://www.w3.org/TR/WCAG20-TECHS/H67
 		*/
 		tile.alt = '';
 
 		/*
 		 Set role="presentation" to force screen readers to ignore this
-		 http://www.w3.org/TR/wai-aria/roles#textalternativecomputation
+		 https://www.w3.org/TR/wai-aria/roles#textalternativecomputation
 		*/
 		tile.setAttribute('role', 'presentation');
 
@@ -11512,7 +11512,7 @@ var TileLayer = GridLayer.extend({
 	},
 
 	_tileOnLoad: function (done, tile) {
-		// For http://github.com/Leaflet/Leaflet/issues/3332
+		// For https://github.com/Leaflet/Leaflet/issues/3332
 		if (ielt9) {
 			setTimeout(bind(done, this, null, tile), 0);
 		} else {
@@ -11582,12 +11582,12 @@ function tileLayer(url, options) {
  * @class TileLayer.WMS
  * @inherits TileLayer
  * @aka L.TileLayer.WMS
- * Used to display [WMS](http://en.wikipedia.org/wiki/Web_Map_Service) services as tile layers on the map. Extends `TileLayer`.
+ * Used to display [WMS](https://en.wikipedia.org/wiki/Web_Map_Service) services as tile layers on the map. Extends `TileLayer`.
  *
  * @example
  *
  * ```js
- * var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+ * var nexrad = L.tileLayer.wms("https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
  * 	layers: 'nexrad-n0r-900913',
  * 	format: 'image/png',
  * 	transparent: true,
@@ -11602,7 +11602,7 @@ var TileLayerWMS = TileLayer.extend({
 	// @aka TileLayer.WMS options
 	// If any custom options not documented here are used, they will be sent to the
 	// WMS server as extra parameters in each request URL. This can be useful for
-	// [non-standard vendor WMS parameters](http://docs.geoserver.org/stable/en/user/services/wms/vendor.html).
+	// [non-standard vendor WMS parameters](https://docs.geoserver.org/stable/en/user/services/wms/vendor.html).
 	defaultWmsParams: {
 		service: 'WMS',
 		request: 'GetMap',
@@ -11851,10 +11851,10 @@ var Renderer = Layer.extend({
  * @inherits Renderer
  * @aka L.Canvas
  *
- * Allows vector layers to be displayed with [`<canvas>`](http://developer.mozilla.org/docs/Web/API/Canvas_API).
+ * Allows vector layers to be displayed with [`<canvas>`](https://developer.mozilla.org/docs/Web/API/Canvas_API).
  * Inherits `Renderer`.
  *
- * Due to [technical limitations](http://caniuse.com/#search=canvas), Canvas is not
+ * Due to [technical limitations](https://caniuse.com/#search=canvas), Canvas is not
  * available in all web browsers, notably IE8, and overlapping geometries might
  * not display properly in some edge cases.
  *
@@ -12327,7 +12327,7 @@ var vmlCreate = (function () {
 /*
  * @class SVG
  *
- * Although SVG is not available on IE7 and IE8, these browsers support [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language), and the SVG renderer will fall back to VML in this case.
+ * Although SVG is not available on IE7 and IE8, these browsers support [VML](https://en.wikipedia.org/wiki/Vector_Markup_Language), and the SVG renderer will fall back to VML in this case.
  *
  * VML was deprecated in 2012, which means VML functionality exists only for backwards compatibility
  * with old versions of Internet Explorer.
@@ -12452,14 +12452,14 @@ var create$2 = vml ? vmlCreate : svgCreate;
  * @inherits Renderer
  * @aka L.SVG
  *
- * Allows vector layers to be displayed with [SVG](http://developer.mozilla.org/docs/Web/SVG).
+ * Allows vector layers to be displayed with [SVG](https://developer.mozilla.org/docs/Web/SVG).
  * Inherits `Renderer`.
  *
- * Due to [technical limitations](http://caniuse.com/#search=svg), SVG is not
+ * Due to [technical limitations](https://caniuse.com/#search=svg), SVG is not
  * available in all web browsers, notably Android 2.x and 3.x.
  *
  * Although SVG is not available on IE7 and IE8, these browsers support
- * [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language)
+ * [VML](https://en.wikipedia.org/wiki/Vector_Markup_Language)
  * (a now deprecated technology), and the SVG renderer will fall back to VML in
  * this case.
  *

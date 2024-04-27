@@ -656,7 +656,7 @@ declare module 'leaflet' {
       /** Pass an array of button names to reorder the buttons in the Toolbar. */
       getLastKeyEvent(type: KEYBOARD_EVENT_TYPE[]): KeyboardKeyEventHandler;
 
-      /** Returns the current pressed key. [KeyboardEvent.key](http://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key). */
+      /** Returns the current pressed key. [KeyboardEvent.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key). */
       getPressedKey(): string;
 
       /** Returns true if the `Shift` key is currently pressed. */

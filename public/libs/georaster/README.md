@@ -36,7 +36,7 @@ const metadata = { noDataValue, projection, xmin, ymax, pixelWidth, pixelHeight 
 const georaster = parseGeoraster(values, metadata);
 ```
 
-# load [cloud optimized geotiff](http://www.cogeo.org/)
+# load [cloud optimized geotiff](https://www.cogeo.org/)
 This option allows you to basically load the pixels only when you need them versus the other options
 that require you to load the whole image into memory.  It will also attempt to automatically discover any available overview files.
 
@@ -59,10 +59,10 @@ that require you to load the whole image into memory.  It will also attempt to a
 
 *resampling*
 
-`resampleMethod` is how to resample the pixels for the returned image.  This value is passed on to [geotiff.js](http://github.com/geotiffjs/geotiff.js)' readRasters function and defaults to 'bilinear'.  The alternative is 'nearest', which is faster and better for categorical data like landcover and continous classes with smooth variation like temperature.
+`resampleMethod` is how to resample the pixels for the returned image.  This value is passed on to [geotiff.js](https://github.com/geotiffjs/geotiff.js)' readRasters function and defaults to 'bilinear'.  The alternative is 'nearest', which is faster and better for categorical data like landcover and continous classes with smooth variation like temperature.
 
 ```javascript
-  const raster_url = "http://landsat-pds.s3.amazonaws.com/c1/L8/024/030/LC08_L1TP_024030_20180723_20180731_01_T1/LC08_L1TP_024030_20180723_20180731_01_T1_B1.TIF";
+  const raster_url = "https://landsat-pds.s3.amazonaws.com/c1/L8/024/030/LC08_L1TP_024030_20180723_20180731_01_T1/LC08_L1TP_024030_20180723_20180731_01_T1_B1.TIF";
   parseGeoraster(raster_url).then(georaster => {
     console.log(georaster.height);
     const options = { left: 0, top: 0, right: 4000, bottom: 4000, width: 10, height: 10 };
@@ -102,9 +102,9 @@ that require you to load the whole image into memory.  It will also attempt to a
 
 # loading georaster package through a script tag
 ```html
-<script src="http://unpkg.com/georaster"></script>
+<script src="https://unpkg.com/georaster"></script>
 ```
-You can view a simple demo of this [here](http://geotiff.github.io/georaster/test/)
+You can view a simple demo of this [here](https://geotiff.github.io/georaster/test/)
 
 # Support
 Post a Github issue or contact the package author, Daniel J. Dufour, at daniel.j.dufour@gmail.com

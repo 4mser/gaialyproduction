@@ -8,8 +8,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
@@ -41,7 +41,7 @@
 
             <!-- mobile menu button -->
             <button class="mobile-menu-button focus:bg-grey-900 p-4 focus:outline-none">
-                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="h-5 w-5" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
@@ -74,9 +74,9 @@
     <script src="{{ asset('libs/markerCluster/leaflet.markercluster.js') }}"></script>
     {{-- <script src="{{ asset('libs/georaster/dist/georaster.bundle.min.js') }}"></script>
     <script src="{{ asset('libs/georaster-layer-for-leaflet/georaster-layer-for-leaflet.bundle.js') }}"></script> --}}
-    <script src="http://unpkg.com/georaster"></script>
-    <script src="http://unpkg.com/proj4"></script>
-    <script src="http://unpkg.com/georaster-layer-for-leaflet"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/proj4"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
 
 
     <script>

@@ -2,8 +2,8 @@
  Leaflet.draw 1.0.4, a plugin that adds drawing and editing tools to Leaflet powered maps.
  (c) 2012-2017, Jacob Toye, Jon West, Smartrak, Leaflet
 
- http://github.com/Leaflet/Leaflet.draw
- http://leafletjs.com
+ https://github.com/Leaflet/Leaflet.draw
+ https://leafletjs.com
  */
 (function (window, document, undefined) {/**
  * Leaflet.draw assumes that you have already included the Leaflet library.
@@ -20,8 +20,8 @@ L.drawVersion = "1.0.4";
  * ```js
  *      var map = L.map('map', {drawControl: true}).setView([51.505, -0.09], 13);
  *
- *      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
- *          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+ *      L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+ *          attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
  *      }).addTo(map);
  * ```
  *
@@ -31,8 +31,8 @@ L.drawVersion = "1.0.4";
  * ```js
  *      var map = L.map('map').setView([51.505, -0.09], 13);
  *
- *      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
- *          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+ *      L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+ *          attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
  *      }).addTo(map);
  *
  *      // FeatureGroup is to store editable layers
@@ -1255,7 +1255,7 @@ L.Draw.SimpleShape = L.Draw.Feature.extend({
 			// (circle, rectangle) in touch mode.
 			// (update): we have to send passive now to prevent scroll, because by default it is {passive: true} now, which means,
 			// handler can't event.preventDefault
-			// check the news http://developers.google.com/web/updates/2016/06/passive-event-listeners
+			// check the news https://developers.google.com/web/updates/2016/06/passive-event-listeners
 			document.addEventListener('touchstart', L.DomEvent.preventDefault, {passive: false});
 		}
 	},
@@ -2981,7 +2981,7 @@ L.Marker.Touch = L.Marker.extend({
 		return L.Marker.prototype._initInteraction.apply(this);
 	},
 
-	// This is an exact copy of http://github.com/Leaflet/Leaflet/blob/v0.7/src/layer/marker/Marker.js
+	// This is an exact copy of https://github.com/Leaflet/Leaflet/blob/v0.7/src/layer/marker/Marker.js
 	// with the addition of the touch events
 	_initInteractionLegacy: function () {
 
@@ -3105,7 +3105,7 @@ L.LatLngUtil = {
 	 * @aka GeometryUtil
 	 */
 	L.GeometryUtil = L.extend(L.GeometryUtil || {}, {
-		// Ported from the OpenLayers implementation. See http://github.com/openlayers/openlayers/blob/master/lib/OpenLayers/Geometry/LinearRing.js#L270
+		// Ported from the OpenLayers implementation. See https://github.com/openlayers/openlayers/blob/master/lib/OpenLayers/Geometry/LinearRing.js#L270
 
 		// @method geodesicArea(): number
 		geodesicArea: function (latLngs) {
@@ -3263,7 +3263,7 @@ L.Util.extend(L.LineUtil, {
 
 	// @method segmentsIntersect(): boolean
 	// Checks to see if two line segments intersect. Does not handle degenerate cases.
-	// http://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf
+	// https://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/x06-sweepline.pdf
 	segmentsIntersect: function (/*Point*/ p, /*Point*/ p1, /*Point*/ p2, /*Point*/ p3) {
 		return this._checkCounterclockwise(p, p2, p3) !==
 			this._checkCounterclockwise(p1, p2, p3) &&
@@ -3441,7 +3441,7 @@ L.Control.Draw = L.Control.extend({
 	// Initializes draw control, toolbars from the options
 	initialize: function (options) {
 		if (L.version < '0.7') {
-			throw new Error('Leaflet.draw 0.2.3+ requires Leaflet 0.7.0+. Download latest from http://github.com/Leaflet/Leaflet/');
+			throw new Error('Leaflet.draw 0.2.3+ requires Leaflet 0.7.0+. Download latest from https://github.com/Leaflet/Leaflet/');
 		}
 
 		L.Control.prototype.initialize.call(this, options);
@@ -3729,7 +3729,7 @@ L.Toolbar = L.Class.extend({
 	},
 
 	/* Detect iOS based on browser User Agent, based on:
-	 * http://stackoverflow.com/a/9039885 */
+	 * https://stackoverflow.com/a/9039885 */
 	_detectIOS: function () {
 		var iOS = (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 		return iOS;

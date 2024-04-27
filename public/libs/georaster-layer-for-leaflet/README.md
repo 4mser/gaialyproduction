@@ -1,4 +1,4 @@
-🇺🇦 "Leaflet was created 11 years ago by Vladimir Agafonkin, an Ukrainian citizen living in Kyiv." - ([LeafletJS](http://leafletjs.com/))
+🇺🇦 "Leaflet was created 11 years ago by Vladimir Agafonkin, an Ukrainian citizen living in Kyiv." - ([LeafletJS](https://leafletjs.com/))
 
 --------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ npm install georaster
 ## Load Package via Script Tag
 
 ```html
-<script src="http://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js">
+<script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js">
 ```
 
 ## Usage
@@ -35,13 +35,13 @@ new GeoRasterLayer({ georaster }).addTo(map);
 
 ## Demos
 
-- <http://geotiff.github.io/georaster-layer-for-leaflet-example/>
-- <http://geotiff.github.io/georaster-layer-for-leaflet-example/examples/load-file.html>
-- More Here: <http://github.com/GeoTIFF/georaster-layer-for-leaflet-example>
+- <https://geotiff.github.io/georaster-layer-for-leaflet-example/>
+- <https://geotiff.github.io/georaster-layer-for-leaflet-example/examples/load-file.html>
+- More Here: <https://github.com/GeoTIFF/georaster-layer-for-leaflet-example>
 
 ## Why
 
-- Support for nearly all projections, thanks to [proj4-fully-loaded](http://github.com/danieljdufour/proj4-fully-loaded) and [epsg.io](http://epsg.io/)
+- Support for nearly all projections, thanks to [proj4-fully-loaded](https://github.com/danieljdufour/proj4-fully-loaded) and [epsg.io](https://epsg.io/)
 - Super faster rendering thanks to a simple nearest neighbor interpolation
 - Use of web workers means seamless integration that doesn't block main thread
 - Loads large geotiffs greater than a hundred megabytes
@@ -51,11 +51,11 @@ new GeoRasterLayer({ georaster }).addTo(map);
 
 ## The GeoRasterLayer Class
 
-A custom class for rendering GeoTIFF's (including COG's) on a leaflet map. The layer extends L.GridLayer, see the [docs](http://leafletjs.com/reference-1.7.1.html#gridlayer) for inherited options and methods.
+A custom class for rendering GeoTIFF's (including COG's) on a leaflet map. The layer extends L.GridLayer, see the [docs](https://leafletjs.com/reference-1.7.1.html#gridlayer) for inherited options and methods.
 
 ### Usage Example
 
-Source Code: <http://github.com/GeoTIFF/georaster-layer-for-leaflet-example/blob/master/main.js>
+Source Code: <https://github.com/GeoTIFF/georaster-layer-for-leaflet-example/blob/master/main.js>
 
 ```javascript
 var parse_georaster = require("georaster");
@@ -66,8 +66,8 @@ var GeoRasterLayer = require("georaster-layer-for-leaflet");
 var map = L.map('map').setView([0, 0], 5);
 
 // add OpenStreetMap basemap
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 var url_to_geotiff_file = "example_4326.tif";
@@ -87,7 +87,7 @@ fetch(url_to_geotiff_file)
           Optionally set the pixelValuesToColorFn function option to customize
           how values for a pixel are translated to a color.
 
-          http://leafletjs.com/reference-1.2.0.html#gridlayer
+          https://leafletjs.com/reference-1.2.0.html#gridlayer
       */
       var layer = new GeoRasterLayer({
           georaster: georaster,
@@ -121,8 +121,8 @@ Please read about our advanced capabilities including custom context drawing fun
 Check out our [Frequently Asked Questions](FAQs.md)
 
 ## Videos
-- [Edge Compute: Cool Stuff You Can Do With COGs in the Browser](http://www.youtube.com/watch?v=XTkNhGpfmB8&t=4190s)
-- [2019 - Algorithm Walk-through: How to Visualize a Large GeoTIFF on Your Web Map](http://www.youtube.com/watch?v=K47JvCL99w0)
+- [Edge Compute: Cool Stuff You Can Do With COGs in the Browser](https://www.youtube.com/watch?v=XTkNhGpfmB8&t=4190s)
+- [2019 - Algorithm Walk-through: How to Visualize a Large GeoTIFF on Your Web Map](https://www.youtube.com/watch?v=K47JvCL99w0)
 
 ## Support
 
