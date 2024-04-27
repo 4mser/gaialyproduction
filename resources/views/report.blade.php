@@ -181,7 +181,7 @@
                                             $geom = json_decode($layer->geom);
                                         @endphp
                                         @if (isset($geom->coordinates) && is_array($geom->coordinates) && count($geom->coordinates) == 2)
-                                            <a target="_blank" href="https://www.google.com/maps/search/?api=1&query={{ $geom->coordinates[1] }}%2C{{ $geom->coordinates[0] }}">{{ $geom->coordinates[0] }},{{ $geom->coordinates[1] }}</a>
+                                            <a target="_blank" href="http://www.google.com/maps/search/?api=1&query={{ $geom->coordinates[1] }}%2C{{ $geom->coordinates[0] }}">{{ $geom->coordinates[0] }},{{ $geom->coordinates[1] }}</a>
                                         @else
                                             <div>No coordinates</div>
                                         @endif
@@ -222,7 +222,7 @@
                         @endphp
 
                         @if (isset($geom->coordinates) && is_array($geom->coordinates) && count($geom->coordinates) == 2)
-                            <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?markers=size:mid|color:red|{{ $geom->coordinates[1] }},{{ $geom->coordinates[0] }}&zoom=14&size=400x400&key={{ env('GOOGLE_API_KEY') }}" />
+                            <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?markers=size:mid|color:red|{{ $geom->coordinates[1] }},{{ $geom->coordinates[0] }}&zoom=14&size=400x400&key={{ env('GOOGLE_API_KEY') }}" />
                         @else
                             <div style="text-align:center;">No coordinates</div>
                         @endif

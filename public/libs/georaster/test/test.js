@@ -93,7 +93,7 @@ describe('Parsing Metadata', function() {
   });
 });
 
-// Using tiff created from https://geomap.arpa.veneto.it/geoserver/wcs?crs=EPSG%3A4326&service=WCS&format=GeoTIFF&request=GetCoverage&height=329&width=368&version=1.0.0&BBox=9.679858245722988%2C13.951082737884812%2C44.183855724634675%2C47.38727409375604&Coverage=geonode%3Aatlanteil
+// Using tiff created from http://geomap.arpa.veneto.it/geoserver/wcs?crs=EPSG%3A4326&service=WCS&format=GeoTIFF&request=GetCoverage&height=329&width=368&version=1.0.0&BBox=9.679858245722988%2C13.951082737884812%2C44.183855724634675%2C47.38727409375604&Coverage=geonode%3Aatlanteil
 describe('Parsing Geonode Files', function() {
   describe('if you pass in tiff from geoserver', function() {
     it('should parse correctly', function(done) {
@@ -173,7 +173,7 @@ describe('Parsing COG Raster', function() {
   describe('Parsing COG Raster', function() {
     it('should parse landsat-pds initialized with url', function(done) {
         this.timeout(50000);
-        const raster_url = "https://landsat-pds.s3.amazonaws.com/c1/L8/024/030/LC08_L1TP_024030_20180723_20180731_01_T1/LC08_L1TP_024030_20180723_20180731_01_T1_B1.TIF";
+        const raster_url = "http://landsat-pds.s3.amazonaws.com/c1/L8/024/030/LC08_L1TP_024030_20180723_20180731_01_T1/LC08_L1TP_024030_20180723_20180731_01_T1_B1.TIF";
         parseGeoraster(raster_url, null, true).then(georaster => {
             try {
                 expect(georaster.numberOfRasters).to.equal(1);

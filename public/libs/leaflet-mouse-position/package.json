@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danwild/Leaflet.MousePosition.git"
+    "url": "git+http://github.com/danwild/Leaflet.MousePosition.git"
   },
   "keywords": [
     "leaflet",
     "leafletjs"
   ],
-  "author": "https://github.com/ardhi",
+  "author": "http://github.com/ardhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danwild/Leaflet.MousePosition/issues"
+    "url": "http://github.com/danwild/Leaflet.MousePosition/issues"
   },
-  "homepage": "https://github.com/danwild/Leaflet.MousePosition#readme"
+  "homepage": "http://github.com/danwild/Leaflet.MousePosition#readme"
 }

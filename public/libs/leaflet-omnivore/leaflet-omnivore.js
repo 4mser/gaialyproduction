@@ -35,7 +35,7 @@ function addData(l, d) {
 }
 
 /**
- * Load a [GeoJSON](https://geojson.org/) document into a layer and return the layer.
+ * Load a [GeoJSON](http://geojson.org/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -53,7 +53,7 @@ function geojsonLoad(url, options, customLayer) {
 }
 
 /**
- * Load a [TopoJSON](https://github.com/mbostock/topojson) document into a layer and return the layer.
+ * Load a [TopoJSON](http://github.com/mbostock/topojson) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -122,7 +122,7 @@ function gpxLoad(url, options, customLayer) {
 }
 
 /**
- * Load a [KML](https://developers.google.com/kml/documentation/) document into a layer and return the layer.
+ * Load a [KML](http://developers.google.com/kml/documentation/) document into a layer and return the layer.
  *
  * @param {string} url
  * @param {object} options
@@ -286,7 +286,7 @@ function corslite(url, callback, cors) {
 
         // Ensure callback is never called synchronously, i.e., before
         // x.send() returns (this has been observed in the wild).
-        // See https://github.com/mapbox/mapbox.js/issues/472
+        // See http://github.com/mapbox/mapbox.js/issues/472
         var original = callback;
         callback = function() {
             if (sent) {
@@ -310,7 +310,7 @@ function corslite(url, callback, cors) {
     }
 
     // Both `onreadystatechange` and `onload` can fire. `onreadystatechange`
-    // has [been supported for longer](https://stackoverflow.com/a/9181508/229001).
+    // has [been supported for longer](http://stackoverflow.com/a/9181508/229001).
     if ('onload' in x) {
         x.onload = loaded;
     } else {
@@ -606,7 +606,7 @@ module.exports = {
 };
 
 },{"d3-dsv":5,"sexagesimal":8}],5:[function(require,module,exports){
-// https://d3js.org/d3-dsv/ Version 1.0.1. Copyright 2016 Mike Bostock.
+// http://d3js.org/d3-dsv/ Version 1.0.1. Copyright 2016 Mike Bostock.
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -779,10 +779,10 @@ module.exports = {
 'use strict';
 
 /**
- * Based off of [the offical Google document](https://developers.google.com/maps/documentation/utilities/polylinealgorithm)
+ * Based off of [the offical Google document](http://developers.google.com/maps/documentation/utilities/polylinealgorithm)
  *
- * Some parts from [this implementation](https://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/PolylineEncoder.js)
- * by [Mark McClure](https://facstaff.unca.edu/mcmcclur/)
+ * Some parts from [this implementation](http://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/PolylineEncoder.js)
+ * by [Mark McClure](http://facstaff.unca.edu/mcmcclur/)
  *
  * @module polyline
  */
@@ -813,7 +813,7 @@ function encode(coordinate, factor) {
  * @param {Number} precision
  * @returns {Array}
  *
- * @see https://github.com/Project-OSRM/osrm-frontend/blob/master/WebContent/routing/OSRM.RoutingGeometry.js
+ * @see http://github.com/Project-OSRM/osrm-frontend/blob/master/WebContent/routing/OSRM.RoutingGeometry.js
  */
 polyline.decode = function(str, precision) {
     var index = 0,
@@ -1215,7 +1215,7 @@ var toGeoJSON = (function() {
     function attrf(x, y) { return parseFloat(attr(x, y)); }
     // one Y child of X, if any, otherwise null
     function get1(x, y) { var n = get(x, y); return n.length ? n[0] : null; }
-    // https://developer.mozilla.org/en-US/docs/Web/API/Node.normalize
+    // http://developer.mozilla.org/en-US/docs/Web/API/Node.normalize
     function norm(el) { if (el.normalize) { el.normalize(); } return el; }
     // cast array x into numbers
     function numarray(x) {

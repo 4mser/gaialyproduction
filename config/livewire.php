@@ -64,7 +64,7 @@ return [
     | This value should be used if livewire assets are served from CDN.
     | Livewire will communicate with an app through this url.
     |
-    | Examples: "https://my-app.com", "myurl.com/app".
+    | Examples: "http://my-app.com", "myurl.com/app".
     |
     */
 
