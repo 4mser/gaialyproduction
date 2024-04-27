@@ -30,6 +30,11 @@ class ProfilesSeeder extends Seeder
                 'name' => 'User',
                 'description' => 'Regular User'
             ],
+            [
+                'id' => Profile::AUDITOR,
+                'name' => 'Auditor',
+                'description' => 'Auditor'
+            ],
         ];
 
         foreach ($items as $item) {

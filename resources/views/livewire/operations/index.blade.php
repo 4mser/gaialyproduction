@@ -12,7 +12,7 @@
                                 </svg>
                             </span>
                         </div>
-                        <input wire:model="search" type="text" name="search" class="text-xxs lg:px- relative w-1/5 flex-auto flex-1 flex-shrink flex-grow rounded rounded-l-none border border-l-0 border-none px-3 font-thin leading-normal tracking-wide text-gray-500 focus:outline-none lg:text-xs" placeholder="{{ __('Search') }}" />
+                        <input wire:model="search" type="text" name="search" class="text-xxs lg:px- relative w-1/5  flex-1 flex-shrink flex-grow rounded rounded-l-none border border-l-0 border-none px-3 font-thin leading-normal tracking-wide text-gray-500 focus:outline-none lg:text-xs" placeholder="{{ __('Search') }}" />
                     </div>
                 </div>
                 <select wire:model="operationTypeId" class="order-3 mb-2 block w-full rounded-md border-gray-300 text-xs shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 sm:order-4 sm:ml-2 sm:mb-0" name="operation_type_id">
@@ -31,7 +31,7 @@
                     </select>
                 @endif
                 <a href="{{ route('inspections.form') }}" title="{{ __('Create inspection') }}" class="bg-primary focus:shadow-outline order-4 float-right ml-2 inline-flex items-center rounded py-2 px-4 text-xs font-bold text-black shadow hover:bg-blue-300 focus:outline-none">
-                    <svg class="-ml-1 mr-1 h-4" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="-ml-1 mr-1 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
                     {{ __('Create') }}

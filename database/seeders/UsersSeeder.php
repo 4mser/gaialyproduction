@@ -40,6 +40,17 @@ class UsersSeeder extends Seeder
                 'email_verified_at' => Carbon::now(),
                 'company_id' => $company->id,
                 'profile_id' => Profile::SUPER_ADMIN,
+            ],
+            [
+                'name' => 'Auditor Name',
+                'last_name' => 'Auditor Lastname',
+                'rut' => '12345678-1',
+                'phone' => '56944444444',
+                'email' => 'auditor@example.com',
+                'password' => bcrypt('auditorpassword'),
+                'email_verified_at' => Carbon::now(),
+                'company_id' => $company->id,
+                'profile_id' => Profile::AUDITOR,  
             ]
         ];
 

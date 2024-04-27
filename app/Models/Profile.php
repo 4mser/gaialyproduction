@@ -11,6 +11,7 @@ class Profile extends Model
     const SUPER_ADMIN = 1;
     const OWNER = 2;
     const USER = 3;
+    const AUDITOR = 4;
 
     use HasFactory;
 
